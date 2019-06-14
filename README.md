@@ -1,2 +1,2 @@
 # docs
-## Cloud-Barista Documentation
+Cloud-Barista Documentation

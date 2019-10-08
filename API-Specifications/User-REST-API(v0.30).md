@@ -35,5 +35,5 @@
 ### [멀티 클라우드 인프라 서비스 통합 모니터링]
   * MCIS 및 VM 모니터링
   * API 규격/샘플: https://documenter.getpostman.com/view/8313442/SVtSV8z1 (1차확정)
-  * leader: [@kyongminkwon](https://github.com/kyongminkwon) [@hyokungk](https://github.com/hyokungk)
+  * leader: [@kyongminkwon](https://github.com/kyongminkwon) [@hyokyungk](https://github.com/hyokyungk)
   

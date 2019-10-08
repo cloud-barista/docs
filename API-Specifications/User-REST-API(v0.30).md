@@ -24,8 +24,8 @@
   * API 규격/샘플: https://documenter.getpostman.com/view/8826038/SVtPYBAi?version=latest (1차확정)
  
 ### [멀티 클라우드 인프라 서비스 특화 기능]
-  * Subnet & Load Balance 기능
-  * API 규격/샘플: 진행중
+  * 동일 Subnet & Load Balance 기능
+  * API 규격/샘플: https://documenter.getpostman.com/view/1661330/SVtSWVX4?version=latest (1차확정)
  
 ### [멀티 클라우드 인프라 서비스 통합 모니터링]
   * MCIS 및 VM 모니터링

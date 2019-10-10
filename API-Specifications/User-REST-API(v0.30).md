@@ -34,6 +34,7 @@
  
 ### [멀티 클라우드 인프라 서비스 통합 모니터링]
   * MCIS 및 VM 모니터링
-  * API 규격/샘플: https://documenter.getpostman.com/view/8313442/SVtSV8z1 (1차확정)
+  * 모니터링 조회 시 UTC 시간 기준으로 time 값 전달
+  * API 규격/샘플: https://documenter.getpostman.com/view/8313442/SVtSV8z1?version=latest (1차확정)
   * leader: [@kyongminkwon](https://github.com/kyongminkwon) [@hyokyungk](https://github.com/hyokyungk)
   

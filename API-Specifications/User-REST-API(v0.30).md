@@ -8,7 +8,7 @@
 ### [멀티 클라우드 네임스페이스 관리]
   * 작업 공간 분리를 위한 네임스페이스 생성 및 관리
   * API 규격/샘플: https://documenter.getpostman.com/view/6451118/SVtR1VsK (확정)
-  * leader: [@jihoon-seo](https://github.com/jihoon-seo) [@seokho-son](https://github.com/seokho-son)
+  * leader: [@seokho-son](https://github.com/seokho-son) [@jihoon-seo](https://github.com/jihoon-seo)
  
 ### [멀티 클라우드 인프라 자원(MCIR) 관리]
   * MCIR관련 등록/생성 및 관리
@@ -20,6 +20,8 @@
     - 보안그룹: https://documenter.getpostman.com/view/6451118/SVtR1pjx 
     - VM스펙: https://documenter.getpostman.com/view/6451118/SVtR1pfW 
     - KeyPair: https://documenter.getpostman.com/view/6451118/SVtR1pjs
+    - 퍼블릭IP: https://documenter.getpostman.com/view/6451118/SVtVU8Sx
+    - vNIC: https://documenter.getpostman.com/view/6451118/SVtVU8gB
   * leader: [@jihoon-seo](https://github.com/jihoon-seo) [@seokho-son](https://github.com/seokho-son)
  
 ### [멀티 클라우드 인프라 서비스(MCIS) 관리]

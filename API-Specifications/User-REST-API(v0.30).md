@@ -31,7 +31,7 @@
  
 ### [멀티 클라우드 인프라 서비스 특화 기능]
   * 동일 Subnet & Load Balancing 기능
-  * API 규격/샘플: https://documenter.getpostman.com/view/1661330/SVtSWVX4?version=latest (1차확정)
+  * API 규격/샘플: https://documenter.getpostman.com/view/1661330/SVtZukp5?version=latest (1차확정)
   * leader: [@innodreamer](https://github.com/innodreamer)
  
 ### [멀티 클라우드 인프라 서비스 통합 모니터링]

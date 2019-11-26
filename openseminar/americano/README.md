@@ -14,7 +14,7 @@
 축사 | 김형철 PM(IITP)
 Cloud-Barista 개요 - [PDF](https://github.com/cloud-barista/docs/blob/master/openseminar/americano/presentations/Cloud-Barista(Americano-OpenSeminar).pdf) | 강동재 C.L.
 Exhibition and Lunch Break
-Cloud-Barista 개념 검증을 위한 활용사례 PoC - [PDF](https://github.com/cloud-barista/docs/blob/master/openseminar/americano/presentations/Cloud-Barista(Americano-OpenSeminar).pdf) | 강동재 C.L.
+Cloud-Barista 개념 검증을 위한 활용사례 PoC | 강동재 C.L.
 (CB-Spider) 멀티 클라우드 인프라 연동 프레임워크 - [PDF](https://github.com/cloud-barista/docs/blob/master/openseminar/americano/presentations/CB-Spider(Americano-OpenSeminar).pdf) | 김병섭 T.L.(Technical Leader)
 (CB-Tumblebug) 멀티 클라우드 인프라 서비스 통합 관리 프레임워크 - [PDF](https://github.com/cloud-barista/docs/blob/master/openseminar/americano/presentations/CB-Tumblebug(Americano-OpenSeminar).pdf) | 손석호 F.L.(Framework Leader)
 Exhibition and Coffee Break

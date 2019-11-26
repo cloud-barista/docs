@@ -1,4 +1,4 @@
-![Americano](https://github.com/cloud-barista/docs/edit/master/openseminar/americano/images/americano.png)
+![Americano](https://github.com/cloud-barista/docs/blob/master/openseminar/americano/images/americano.png)
 
 ## 세미나 개요
 1. 목적: Cloud-Barista America 버전 소개 및 참여 방법 공유 

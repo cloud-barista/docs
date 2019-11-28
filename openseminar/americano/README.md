@@ -26,4 +26,4 @@ Exhibition and Coffee Break
 Cloud-Barista 개발 지원도구(Cloud-Twin) 멀티 클라우드 에뮬레이터 - [PDF](https://github.com/cloud-barista/docs/blob/master/openseminar/americano/presentations/Cloud-Twin(Americano-OpenSeminar).pdf) | 박재홍 C.M.(Community Member)
 
 ## 세미나 개최 경과보고
-Cloud-Barista 제1회 오픈세미나 개최 결과보고서 - [PDF](https://github.com/cloud-barista/docs/blob/master/openseminar/americano/Cloud-Barista 1st 오픈 세미나 개최 결과 경과.pdf)
+Cloud-Barista 제1회 오픈세미나 개최 결과보고서 - [PDF](https://github.com/cloud-barista/docs/blob/master/openseminar/americano/Cloud-Barista-1st-오픈세미나-개최결과-경과.pdf)

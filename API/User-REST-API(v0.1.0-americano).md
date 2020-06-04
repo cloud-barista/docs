@@ -12,7 +12,7 @@
 #### [멀티 클라우드 네임스페이스 관리]
   * 작업 공간 분리를 위한 네임스페이스 생성 및 관리
   * API 규격/샘플: https://cloud-barista.github.io/rest-api/v0.1.0/tumblebug/namespace/
-  * Leader: [@seokho-son](https://github.com/seokho-son "https://github.com/seokho-son"){:target="_blank" rel="noopener"} [@jihoon-seo](https://github.com/jihoon-seo "https://github.com/jihoon-seo"){:target="_blank" rel="noopener"}
+  * Leader: [@seokho-son](https://github.com/seokho-son "https://github.com/seokho-son"){:target="_blank" rel="noopener noreferrer"} [@jihoon-seo](https://github.com/jihoon-seo "https://github.com/jihoon-seo"){:target="_blank" rel="noopener noreferrer"}
  
 #### [멀티 클라우드 인프라 자원(MCIR) 관리]
   * MCIR관련 등록/생성 및 관리

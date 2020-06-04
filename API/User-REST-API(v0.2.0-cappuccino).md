@@ -30,7 +30,4 @@
   * MCIS 및 VM 모니터링
   * 모니터링 조회 시 UTC 시간 기준으로 time 값 전달
   * API 규격/샘플: https://cloud-barista.github.io/rest-api/v0.2.0/dragonfly/
-  * <a href="https://cloud-barista.github.io/rest-api/v0.2.0/dragonfly/" target="_New">https://cloud-barista.github.io/rest-api/v0.2.0/dragonfly/</a>
   * Leader: [@kyongminkwon](https://github.com/kyongminkwon "https://github.com/kyongminkwon") [@hyokyungk](https://github.com/hyokyungk "https://github.com/hyokyungk")
-  
-

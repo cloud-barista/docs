@@ -6,7 +6,7 @@
 * 행사명 : Cloud-Barista 2nd Open Conference<BR>
   * 부제 : “멀티 클라우드에 접속하다(Contact to the Multi-Cloud).”
 
-* 일  시 : 2020년 6월 3일(수) 14:00 ~ 18:00
+* 일   시 : 2020년 6월 3일(수) 14:00 ~ 18:00
 
 * 행사 방식 : 공개 온라인 컨퍼런스(무료)
 

@@ -2,14 +2,14 @@
   <img src="https://github.com/cloud-barista/docs/blob/master/openseminar/v0.1.0-americano/images/americano.png">
 </p>
 
-## 세미나 개요
+## 오픈 컨퍼런스 개요
 1. 목적: Cloud-Barista v0.1.0-americano 소개 및 커뮤니티 참여 방법 공유 
 2. 일시: 2019년 11월 22일(금), 10:00 ~ 18:00
 3. 장소: 쉐라톤팔래스호텔강남 그랜드볼룸(B1)
 
 <BR>
 
-## 세미나 프로그램 및 발표 자료
+## 오픈 컨퍼런스 프로그램 및 발표 자료
 
 | 세션 내용 | 발표자 |
 | --------------------------------- | :---------------------------------: |

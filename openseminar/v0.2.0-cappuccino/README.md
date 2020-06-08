@@ -2,7 +2,7 @@
   <img src="https://cloud-barista.github.io/assets/img/blog/2nd-conference/leaflet-haeder.png">
 </p>
 
-## 세미나 개요
+## 오픈 컨퍼런스 개요
 * 행 사 명 : Cloud-Barista 2nd Open Conference<BR>
   * 부제 : “멀티 클라우드에 접속하다(Contact to the Multi-Cloud).”
 
@@ -12,7 +12,7 @@
 
 <BR>
 
-## 세미나 프로그램 및 발표 자료
+## 오픈 컨퍼런스 프로그램 및 발표 자료
 
 | 세션 제목 | 발표자 | 발표 자료 | 발표 영상 |
 | ------------------------------ | :--------------: | :----------------: | :--------------------: |

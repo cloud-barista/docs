@@ -3,7 +3,7 @@
 </p>
 
 ## 세미나 개요
-<img src="https://cloud-barista.github.io/assets/img/blog/2nd-conference/square_payment_icon_132877.png" width="25" height="35" style="border:0px;vertical-align:middle"> 행 사 명 : Cloud-Barista 2nd Opne Conference<BR>
+<img src="https://cloud-barista.github.io/assets/img/blog/2nd-conference/square_payment_icon_132877.png" width="25" height="35" style="border:0px;vertical-align:middle"> 행 사 명 : Cloud-Barista 2nd Open Conference<BR>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* 부제 : “멀티 클라우드에 접속하다(Contact to the Multi-Cloud).”
 
 <img src="https://cloud-barista.github.io/assets/img/blog/2nd-conference/square_payment_icon_132877.png" width="25" height="35" style="border:0px;vertical-align:middle"> 일   시 : 2020년 6월 3일(수) 14:00 ~ 18:00

@@ -1,33 +1,29 @@
 <p align="center">
-  <img src="https://github.com/cloud-barista/docs/blob/master/openseminar/v0.1.0-americano/images/americano.png">
+  <img src="https://cloud-barista.github.io/assets/img/blog/2nd-conference/leaflet-haeder.png>
 </p>
 
 ## 세미나 개요
-1. 목적: Cloud-Barista v0.1.0-americano 소개 및 커뮤니티 참여 방법 공유 
-2. 일시: 2019년 11월 22일(금), 10:00 ~ 18:00
-3. 장소: 쉐라톤팔래스호텔강남 그랜드볼룸(B1)
+<img src="/assets/img/blog/2nd-conference/square_payment_icon_132877.png" width="25" height="35" style="border:0px;vertical-align:middle"> 행 사 명 : Cloud-Barista 2nd Opne Conference
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* 부제 : “멀티 클라우드에 접속하다(Contact to the Multi-Cloud).”
+
+<img src="/assets/img/blog/2nd-conference/square_payment_icon_132877.png" width="25" height="35" style="border:0px;vertical-align:middle"> 일   시 : 2020년 6월 3일(수) 14:00 ~ 18:00
+
+<img src="/assets/img/blog/2nd-conference/square_payment_icon_132877.png" width="25" height="35" style="border:0px;vertical-align:middle"> 행사 방식 : 공개 온라인 컨퍼런스(무료)
 
 <BR>
 
 ## 세미나 프로그램 및 발표 자료
 
-| 세션 내용 | 발표자 |
-| --------------------------------- | :---------------------------------: |
-| 행사 오프닝 | 강동재 C.L.<BR>(Community Leader) |
-| 키노트 : 국내 공개SW 현황 및 정책 | 김경인 수석(NIPA) |
-| 축사 | 김형철 PM(IITP) |
-| Cloud-Barista 개요 ([PDF](https://github.com/cloud-barista/docs/blob/master/openseminar/v0.1.0-americano/ppt_files/Americano-OpenSeminar-1-Cloud-Barista.pdf)) | 강동재 C.L. |
-| Exhibition and Lunch Break ||
-| Cloud-Barista 개념 검증을 위한 활용사례 PoC | 강동재 C.L. |
-| (CB-Spider) 멀티 클라우드 인프라 연동 프레임워크 ([PDF](https://github.com/cloud-barista/docs/blob/master/openseminar/v0.1.0-americano/ppt_files/Americano-OpenSeminar-2-CB-Spider.pdf)) | 김병섭 T.L.<BR>(Technical Leader) |
-| (CB-Tumblebug) 멀티 클라우드 인프라 서비스 통합 관리 프레임워크 ([PDF](https://github.com/cloud-barista/docs/blob/master/openseminar/v0.1.0-americano/ppt_files/Americano-OpenSeminar-3-CB-Tumblebug.pdf)) | 손석호 F.L.<BR>(Framework Leader) |
-Exhibition and Coffee Break
-| (CB-Dragonfly) 멀티 클라우드 통합 모니터링 프레임워크 ([PDF](https://github.com/cloud-barista/docs/blob/master/openseminar/v0.1.0-americano/ppt_files/Americano-OpenSeminar-4-CB-Dragonfly.pdf)) | 권경민 F.L. |
-| (CB-Waterstrider/Webtool) Cloud-Barista 웹도구 ([PDF](https://github.com/cloud-barista/docs/blob/master/openseminar/v0.1.0-americano/ppt_files/Americano-OpenSeminar-5-CB-Waterstrider.pdf)) | 정영태 F.L. |
-Exhibition and Coffee Break
-| Cloud-Barista 개발 지원도구(Cloud-Twin) 멀티 클라우드 에뮬레이터 ([PDF](https://github.com/cloud-barista/docs/blob/master/openseminar/v0.1.0-americano/ppt_files/Americano-OpenSeminar-6-Cloud-Twin.pdf)) | 박재홍 C.M.<BR>(Community Member) |
+| 세션 제목 | 발표자 | 발표 자료 | 발표 영상 |
+| ---------------------- | :----------------------: | :----------------------: | :-----------------------: |
+| Cloud-Barista : 멀티 클라우드 여정의 베이스캠프<BR>(Cloud-Barista 기술 및 커뮤니티 소개) | 강동재<BR>커뮤니티 리더 | [[Slideshare](https://www.slideshare.net/cloud-barista/cloudbarista-2-cloudbarista-2st-open-seminar-cloudbarista-technology-and-open-source-community-235056632)] [[Github](https://github.com/cloud-barista/docs/blob/master/openseminar/v0.2.0-cappuccino/ppt_files/Cappuccino-OpenSeminar-1-Cloud-Barista%20Technology%20and%20Open%20Source%20Community.pdf)] | [[Youtube]()] |
+| CB-Spider : 전세계 클라우드를 엮는 그날까지<BR>(멀티 클라우드 인프라 연동) | 김병섭 CB-Spider<BR>프레임워크 리더 | [[Slideshare](https://www.slideshare.net/cloud-barista/cloudbarista-2-interworking-with-multicloud-infrastructure-235058344)] [[Github](https://github.com/cloud-barista/docs/blob/master/openseminar/v0.2.0-cappuccino/ppt_files/Cappuccino-OpenSeminar-2-CB-Spider-Interworking%20with%20multi-cloud%20infrastructure.pdf)] | [[Youtube]()] | 
+| Coffee Break |||
+| CB-Tumblebug : 최적 멀티 클라우드 인프라를 찾아서<BR>(멀티 클라우드 인프라 통합 운용 관리) | 손석호 CB-Tumblebug<BR>프레임워크 리더 | [[Slideshare](https://www.slideshare.net/cloud-barista/cloudbarista-2-multicloud-infrastructure-integrated-operation-management)] [[Github](https://github.com/cloud-barista/docs/blob/master/openseminar/v0.2.0-cappuccino/ppt_files/Cappuccino-OpenSeminar-3-CB-Tumblebug-Multi-cloud%20infrastructure%20integrated%20operation%20management.pdf)] | [[Youtube]()] |
+| CB-Ladybug : 애플리케이션을 전세계 곳곳으로<BR>(멀티 클라우드 애플리케이션 통합 운용 관리) | 김수영 CB-Ladybug<BR>프레임워크 리더) | [[Slideshare](https://www.slideshare.net/cloud-barista/cloudbarista-2-integrated-management-of-multicloud-applications)] [[Github](https://github.com/cloud-barista/docs/blob/master/openseminar/v0.2.0-cappuccino/ppt_files/Cappuccino-OpenSeminar-4-CB-Ladybug-Integrated%20management%20of%20multi-cloud%20applications.pdf)] | [[Youtube]()] |
+| Coffee Break |||
+| CB-Dragonfly : 전세계 클라우드가 다보여<BR>(대규모 멀티 클라우드 모니터링) | 권경민 CB-Dragonfly<BR>프레임워크 리더 | [[Slideshare](https://www.slideshare.net/cloud-barista/cloudbarista-2-cbdragonfly-multi-cloud-integration-monitoring-framework)] [[Github]https://github.com/cloud-barista/docs/blob/master/openseminar/v0.2.0-cappuccino/ppt_files/Cappuccino-OpenSeminar-5-CB-Dragonfly-Multi%20Cloud%20Integration%20Monitoring%20Framework.pdf)] | [[Youtube]()] |
+| CB-Waterstrider : 멀티 클라우드와 스킨십을<BR>(멀티 클라우드 서비스 공통 플랫폼 웹도구) | 정영태 CB-Waterstrider<BR>프레임워크 리더 | [[Slideshare](https://www.slideshare.net/cloud-barista/cloudbarista-2-cbwaterstrider-multi-cloud-service-common-framework-webtool)] [[Github](https://github.com/cloud-barista/docs/blob/master/openseminar/v0.2.0-cappuccino/ppt_files/Cappuccino-OpenSeminar-6-CB-Waterstrider-Multi%20Cloud%20Service%20Common%20Framework%20WebTool.pdf)] | [[Youtube]()] |
+| CB-Bridge : 원 클릭으로 Cloud-Barista 운용하기<BR>(Cloud-Barista 운용 관리) | 서지훈 CB-Bridge<BR>프레임워크 리더 | [[Slideshare](https://www.slideshare.net/cloud-barista/cloudbarista-2-cbbridge-multicloud-common-platform-operation-management)] [[Github](https://www.slideshare.net/cloud-barista/cloudbarista-2-cbbridge-multicloud-common-platform-operation-management)] | [[Youtube]()] |
 
 <BR>
-
-## 세미나 개최 경과보고
-Cloud-Barista 제1회 오픈세미나 개최 결과보고서 - [PDF](https://github.com/cloud-barista/docs/blob/master/openseminar/v0.1.0-americano/Cloud-Barista-1st-%EC%98%A4%ED%94%88%EC%84%B8%EB%AF%B8%EB%82%98-%EA%B0%9C%EC%B5%9C%EA%B2%B0%EA%B3%BC-%EA%B2%BD%EA%B3%BC.pdf)

@@ -27,3 +27,7 @@
 | CB-Bridge : 원 클릭으로 Cloud-Barista 운용하기<BR>(Cloud-Barista 운용 관리) | 서지훈 CB-Bridge<BR>프레임워크 리더 | [[Slideshare](https://www.slideshare.net/cloud-barista/cloudbarista-2-cbbridge-multicloud-common-platform-operation-management)] [[Github](https://www.slideshare.net/cloud-barista/cloudbarista-2-cbbridge-multicloud-common-platform-operation-management)] | [[Youtube](https://youtu.be/g5XUQZFcreI?t=13332)] |
 
 <BR>
+
+## 소스 코드 다운로드
+
+* [v0.2.0-cappuccino 소스 코드 다운로드](https://github.com/cloud-barista/cloud-barista/releases/tag/v0.2.0-cappuccino/ "https://github.com/cloud-barista/cloud-barista/releases/tag/v0.2.0-cappuccino/")

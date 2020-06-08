@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/cloud-barista/docs/tree/master/openseminar/v0.1.0-americano/images/americano.png">
+  <img src="https://github.com/cloud-barista/docs/blob/master/openseminar/v0.1.0-americano/images/americano.png">
 </p>
 
 ## 세미나 개요

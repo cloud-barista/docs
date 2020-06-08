@@ -9,9 +9,9 @@
 
 ## 세미나 프로그램 및 발표 자료
 
-세션 내용 | 발표자
---------------------------------- |: ---------------------------------:
-행사 오프닝 | 강동재 C.L.<BR>(Community Leader)
+| 세션 내용 | 발표자 |
+| :--------------------------------- | :---------------------------------: |
+| 행사 오프닝 | 강동재 C.L.<BR>(Community Leader) |
 키노트 : 국내 공개SW 현황 및 정책 | 김경인 수석(NIPA)
 축사 | 김형철 PM(IITP)
 Cloud-Barista 개요 ([PDF](https://github.com/cloud-barista/docs/blob/master/openseminar/v0.1.0-americano/ppt_files/Americano-OpenSeminar-1-Cloud-Barista.pdf)) | 강동재 C.L.

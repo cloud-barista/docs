@@ -18,12 +18,12 @@ Cloud-Barista 개요 ([PDF](https://github.com/cloud-barista/docs/blob/master/op
 Exhibition and Lunch Break
 Cloud-Barista 개념 검증을 위한 활용사례 PoC | 강동재 C.L.
 (CB-Spider) 멀티 클라우드 인프라 연동 프레임워크 ([PDF](https://github.com/cloud-barista/docs/blob/master/openseminar/v0.1.0-americano/ppt_files/Americano-OpenSeminar-2-CB-Spider.pdf)) | 김병섭 T.L.(Technical Leader)
-(CB-Tumblebug) 멀티 클라우드 인프라 서비스 통합 관리 프레임워크 - [PDF](https://github.com/cloud-barista/docs/blob/master/openseminar/v0.1.0-americano/ppt_files/Americano-OpenSeminar-3-CB-Tumblebug.pdf) | 손석호 F.L.(Framework Leader)
+(CB-Tumblebug) 멀티 클라우드 인프라 서비스 통합 관리 프레임워크 ([PDF](https://github.com/cloud-barista/docs/blob/master/openseminar/v0.1.0-americano/ppt_files/Americano-OpenSeminar-3-CB-Tumblebug.pdf)) | 손석호 F.L.(Framework Leader)
 Exhibition and Coffee Break
-(CB-Dragonfly) 멀티 클라우드 통합 모니터링 프레임워크 - [PDF](https://github.com/cloud-barista/docs/blob/master/openseminar/v0.1.0-americano/ppt_files/Americano-OpenSeminar-4-CB-Dragonfly.pdf) | 권경민 F.L.
-(CB-Waterstrider/Webtool) Cloud-Barista 웹도구 - [PDF](https://github.com/cloud-barista/docs/blob/master/openseminar/v0.1.0-americano/ppt_files/Americano-OpenSeminar-5-CB-Waterstrider.pdf) | 정영태 F.L.
+(CB-Dragonfly) 멀티 클라우드 통합 모니터링 프레임워크 ([PDF](https://github.com/cloud-barista/docs/blob/master/openseminar/v0.1.0-americano/ppt_files/Americano-OpenSeminar-4-CB-Dragonfly.pdf)) | 권경민 F.L.
+(CB-Waterstrider/Webtool) Cloud-Barista 웹도구 ([PDF](https://github.com/cloud-barista/docs/blob/master/openseminar/v0.1.0-americano/ppt_files/Americano-OpenSeminar-5-CB-Waterstrider.pdf)) | 정영태 F.L.
 Exhibition and Coffee Break
-Cloud-Barista 개발 지원도구(Cloud-Twin) 멀티 클라우드 에뮬레이터 - [PDF](https://github.com/cloud-barista/docs/blob/master/openseminar/v0.1.0-americano/ppt_files/Americano-OpenSeminar-6-Cloud-Twin.pdf) | 박재홍 C.M.(Community Member)
+Cloud-Barista 개발 지원도구(Cloud-Twin) 멀티 클라우드 에뮬레이터 ([PDF](https://github.com/cloud-barista/docs/blob/master/openseminar/v0.1.0-americano/ppt_files/Americano-OpenSeminar-6-Cloud-Twin.pdf)) | 박재홍 C.M.(Community Member)
 
 <BR>
 

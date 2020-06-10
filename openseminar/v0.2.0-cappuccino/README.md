@@ -2,7 +2,7 @@
   <img src="https://cloud-barista.github.io/assets/img/blog/2nd-conference/leaflet-haeder.png">
 </p>
 
-## 오픈 컨퍼런스 개요
+## 2차 오픈 컨퍼런스 개요
 * 행사명 : Cloud-Barista 2nd Open Conference<BR>
   * 부제 : “멀티 클라우드에 접속하다(Contact to the Multi-Cloud).”
 
@@ -12,7 +12,7 @@
 
 <BR>
 
-## 오픈 컨퍼런스 프로그램 및 발표 자료
+## 2차 오픈 컨퍼런스 프로그램 및 발표 자료
 
 | 세션 제목 | 발표자 | 발표 자료 | 발표 영상 |
 | ------------------------------ | :--------------: | :----------------: | :--------------------: |
@@ -28,12 +28,12 @@
 
 <BR>
 
-## 질의 사항 답변서(Q&A) 다운로드
+## 2차 오픈 컨퍼런스 질의 사항 답변서(Q&A) 다운로드
 
-* [2차 컨퍼런스 행사중 질의 사항 답변서 다운로드](https://github.com/cloud-barista/docs/blob/master/openseminar/v0.2.0-cappuccino/Cloud-Barista_2nd_Open_Conference-%EC%A7%88%EC%9D%98%EC%82%AC%ED%95%AD_%EB%8B%B5%EB%B3%80%EC%84%9C.pdf "https://github.com/cloud-barista/docs/blob/master/openseminar/v0.2.0-cappuccino/Cloud-Barista_2nd_Open_Conference-%EC%A7%88%EC%9D%98%EC%82%AC%ED%95%AD_%EB%8B%B5%EB%B3%80%EC%84%9C.pdf")
+* [질의 사항 답변서 다운로드](https://github.com/cloud-barista/docs/blob/master/openseminar/v0.2.0-cappuccino/Cloud-Barista_2nd_Open_Conference-%EC%A7%88%EC%9D%98%EC%82%AC%ED%95%AD_%EB%8B%B5%EB%B3%80%EC%84%9C.pdf "https://github.com/cloud-barista/docs/blob/master/openseminar/v0.2.0-cappuccino/Cloud-Barista_2nd_Open_Conference-%EC%A7%88%EC%9D%98%EC%82%AC%ED%95%AD_%EB%8B%B5%EB%B3%80%EC%84%9C.pdf")
 
 <BR>
 
-## 소스 코드 다운로드
+## Cloud-Barista 소스 코드 다운로드
 
 * [v0.2.0-cappuccino 소스 코드 다운로드](https://github.com/cloud-barista/cloud-barista/tree/v0.2.0-cappuccino "https://github.com/cloud-barista/cloud-barista/tree/v0.2.0-cappuccino")

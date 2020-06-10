@@ -34,6 +34,6 @@
 
 <BR>
 
-## Cloud-Barista 소스 코드 다운로드
+## Cloud-Barista 소스 코드 및 설치 가이드
 
-* [v0.2.0-cappuccino 소스 코드 다운로드](https://github.com/cloud-barista/cloud-barista/tree/v0.2.0-cappuccino "https://github.com/cloud-barista/cloud-barista/tree/v0.2.0-cappuccino")
+* [v0.2.0-cappuccino 소스 코드 및 설치 가이드](https://github.com/cloud-barista/cloud-barista/tree/v0.2.0-cappuccino "https://github.com/cloud-barista/cloud-barista/tree/v0.2.0-cappuccino")

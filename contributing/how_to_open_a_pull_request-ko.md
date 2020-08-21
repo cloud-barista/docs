@@ -1,16 +1,12 @@
 # GitHub를 통한 Cloud-Barista 컨트리뷰션 절차 가이드
 
 ## 개요
--	Github 컨트리뷰션 사이클 가이드를 통한 poc-farmoni repository에 컨트리뷰션 방법 공유
+-	Github 컨트리뷰션 사이클 가이드를 통한 임의의 repository에 컨트리뷰션 방법 공유
     -	Git remote repository 등록 및 Pull-request (PR) 처리 방법
 -	cloud-barista community participant roles 
     -	Contributor : Issue 및 PR를 기여하는 사람
     -	Reviewer : Issue 및 PR를 검토하고 의견을 주는 사람
     -	Approver : Upstream 소스에 PR을 Merge하는 사람
--	cloud-barista community membership
-    -	cloud-barista community member에 등록되면 Reviewer/Approver의 권한을 가진다. (현재)
-        -	membership 등록 정책: TBD
-    -	Merge를 수행하는 Approver는 @powerkimhub 및 @seokho-son으로 한정한다. (각 Repo의 공식 Approver 확정 전까지)
 -	참고
     -	Issue
         -	문제를 제기
@@ -19,34 +15,34 @@
         -	PR, 본인이 작업한 브랜치의 내용을 upstream에 반영해 달라고 요청하는 작업
 
 ## 컨트리뷰션 절차
-- 개인 Github 계정으로, 컨트리뷰션 원하는 프로젝트 Fork
+- 개인 Github 계정(예시: cb-contributor)으로, 컨트리뷰션 원하는 프로젝트(예시:cloud-barista/cb-tumblebug)를 fork한다.
 - 자신의 Github 계정에 있는 fork된 Repository를 개발 환경에 clone한다.
-- 본 예시에서는 poc-farmoni라는 Repository를 대상으로 한다.
+- 본 예시에서는 cb-tumblebug라는 Repository를 대상으로 한다.
 
-`$ git clone https://github.com/seokho-son/poc-farmoni.git`
+`$ git clone https://github.com/cb-contributor/cb-tumblebug.git`
 
 - 자신의 Github 계정에 있는 fork된 Repository를 개발 환경에 clone한다.
 
-`$ git clone https://github.com/seokho-son/poc-farmoni.git`
+`$ git clone https://github.com/cb-contributor/cb-tumblebug.git`
 
 - clone된 디렉토리에 들어가서, git의 repository 상태를 확인한다.
 
 `$ git remote -v`
 ```
-origin	git@github.com:seokho-son/poc-farmoni.git (fetch)
-origin	git@github.com:seokho-son/poc-farmoni.git (push)
+origin	git@github.com:cb-contributor/cb-tumblebug.git (fetch)
+origin	git@github.com:cb-contributor/cb-tumblebug.git (push)
 ```
 
 - 원격 저장소(프로젝트의 원래 저장소)를 설정한다.
 
-`$ git remote add upstream https://github.com/cloud-barista/poc-farmoni.git`
+`$ git remote add upstream https://github.com/cloud-barista/cb-tumblebug.git`
 
 `$ git remote -v`
 ```
-origin	git@github.com:seokho-son/poc-farmoni.git (fetch)
-origin	git@github.com:seokho-son/poc-farmoni.git (push)
-upstream	git@github.com:cloud-barista/poc-farmoni.git (fetch)
-upstream	git@github.com:cloud-barista/poc-farmoni.git (push)
+origin	git@github.com:cb-contributor/cb-tumblebug.git (fetch)
+origin	git@github.com:cb-contributor/cb-tumblebug.git (push)
+upstream	git@github.com:cloud-barista/cb-tumblebug.git (fetch)
+upstream	git@github.com:cloud-barista/cb-tumblebug.git (push)
 ```
 
 - 현재 브랜치를 확인한다.
@@ -58,15 +54,15 @@ upstream	git@github.com:cloud-barista/poc-farmoni.git (push)
 
 - 작업할 임시 브랜치를 생성하고, 해당 브랜치로 이동한다.
 
-`$ git checkout -b up-common-config`
+`$ git checkout -b feature-add-new-idea`
 ```
-Switched to a new branch 'up-common-config'
+Switched to a new branch 'feature-add-new-idea'
 ```
 
 `$ git branch`
 ```
 master
-* up-common-config
+* feature-add-new-idea
 ```
 
 - 원하는 내용 수정
@@ -75,46 +71,46 @@ master
 
 `$ git status`
 ```
-On branch up-common-config
+On branch feature-add-new-idea
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
   (use "git checkout -- <file>..." to discard changes in working directory)
-	modified:   farmoni_master/conf/config.yaml
+	modified:   src/conf/config.yaml
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
 `$ git diff`
 ```
-diff --git a/farmoni_master/conf/config.yaml b/farmoni_master/conf/config.yaml
+diff --git a/src/conf/config.yaml b/src/conf/config.yaml
 index 9ebeaf0..cf31b94 100644
---- a/farmoni_master/conf/config.yaml
-+++ b/farmoni_master/conf/config.yaml
+--- a/src/conf/config.yaml
++++ b/src/conf/config.yaml
 ```
 
 - Upstream에 커밋할 파일을 스테이징한다.
 
-`$ git add farmoni_master/conf/config.yaml`
+`$ git add src/conf/config.yaml`
 
 `$ git status`
 ```
-On branch up-common-config
+On branch feature-add-new-idea
 Changes to be committed:
   (use "git reset HEAD <file>..." to unstage)
-	modified:   farmoni_master/conf/config.yaml
+	modified:   src/conf/config.yaml
 ```
 
 - 스테이징된 파일들을 커밋한다. 이때 1줄 커밋 메시지는 이해하기 쉽게 작성한다.
 
 `$ git commit -m "Update frmoni_master config for a common etri environment"`
 ```
-[up-common-config bcf1ddf] Update frmoni_master config for a common etri environment
+[feature-add-new-idea bcf1ddf] Update frmoni_master config for a common etri environment
  1 file changed, 69 insertions(+), 69 deletions(-)
- rewrite farmoni_master/conf/config.yaml (68%)
+ rewrite src/conf/config.yaml (68%)
 ```
 
 `$ git status`
 ```
-On branch up-common-config
+On branch feature-add-new-idea
 nothing to commit, working tree clean
 ```
 
@@ -122,7 +118,7 @@ nothing to commit, working tree clean
 
 `$ git fetch upstream`
 ```
-From github.com:cloud-barista/poc-farmoni
+From github.com:cloud-barista/cb-tumblebug
  * [new branch]      master     -> upstream/master
 ```
 
@@ -130,12 +126,12 @@ From github.com:cloud-barista/poc-farmoni
 
 `$ git rebase upstream/master`
 ```
-Current branch up-common-config is up-to-date.
+Current branch feature-add-new-idea is up-to-date.
 ```
 
 - Origin(본인의 github repository)에 작업 브랜치를 push(업로드) 한다.
 
-`$ git push origin up-common-config`
+`$ git push origin feature-add-new-idea`
 ```
 Counting objects: 5, done.
 Delta compression using up to 4 threads.
@@ -144,11 +140,11 @@ Writing objects: 100% (5/5), 883 bytes | 883.00 KiB/s, done.
 Total 5 (delta 3), reused 0 (delta 0)
 remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
 remote: 
-remote: Create a pull request for 'up-common-config' on GitHub by visiting:
-remote:      https://github.com/seokho-son/poc-farmoni/pull/new/up-common-config
+remote: Create a pull request for 'feature-add-new-idea' on GitHub by visiting:
+remote:      https://github.com/cb-contributor/cb-tumblebug/pull/new/feature-add-new-idea
 remote: 
-To github.com:seokho-son/poc-farmoni.git
- * [new branch]      up-common-config -> up-common-config
+To github.com:cb-contributor/cb-tumblebug.git
+ * [new branch]      feature-add-new-idea -> feature-add-new-idea
 ```
 
 - Github의 fork 받아 온 repository에 접속하면, “Compare & pull request”가 활성화 된다. 이를 클릭하여, PR 생성 작업에 들어간다. PR 내용은 리뷰어나 승인자가 판단을 쉽게 할 수 있도록, 최대한 수정 내용을 명확하게 작성한다.

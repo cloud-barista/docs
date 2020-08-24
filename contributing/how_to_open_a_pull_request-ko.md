@@ -1,7 +1,7 @@
 # GitHub를 통한 Cloud-Barista 컨트리뷰션 절차 가이드
 
 ## 개요
--	Github 컨트리뷰션 사이클 가이드를 통한 임의의 repository에 컨트리뷰션 방법 공유
+-	GitHub 컨트리뷰션 사이클 가이드를 통한 임의의 repository에 컨트리뷰션 방법 공유
     -	Git remote repository 등록 및 Pull-request (PR) 처리 방법
 -	cloud-barista community participant roles 
     -	Contributor : Issue 및 PR를 기여하는 사람
@@ -15,13 +15,11 @@
         -	PR, 본인이 작업한 브랜치의 내용을 upstream에 반영해 달라고 요청하는 작업
 
 ## 컨트리뷰션 절차
-- 개인 Github 계정(예시: cb-contributor)으로, 컨트리뷰션 원하는 프로젝트(예시:cloud-barista/cb-tumblebug)를 fork한다.
-- 자신의 Github 계정에 있는 fork된 Repository를 개발 환경에 clone한다.
+- 개인 GitHub 계정(예시: cb-contributor)으로, 컨트리뷰션 원하는 프로젝트(예시:cloud-barista/cb-tumblebug)를 fork한다.
+- 자신의 GitHub 계정에 있는 fork된 Repository를 개발 환경에 clone한다.
 - 본 예시에서는 cb-tumblebug라는 Repository를 대상으로 한다.
 
-`$ git clone https://github.com/cb-contributor/cb-tumblebug.git`
-
-- 자신의 Github 계정에 있는 fork된 Repository를 개발 환경에 clone한다.
+- 자신의 GitHub 계정에 있는 fork된 Repository를 개발 환경에 clone한다.
 
 `$ git clone https://github.com/cb-contributor/cb-tumblebug.git`
 
@@ -147,7 +145,7 @@ To github.com:cb-contributor/cb-tumblebug.git
  * [new branch]      feature-add-new-idea -> feature-add-new-idea
 ```
 
-- Github의 fork 받아 온 repository에 접속하면, “Compare & pull request”가 활성화 된다. 이를 클릭하여, PR 생성 작업에 들어간다. PR 내용은 리뷰어나 승인자가 판단을 쉽게 할 수 있도록, 최대한 수정 내용을 명확하게 작성한다.
+- GitHub의 fork 받아 온 repository에 접속하면, “Compare & pull request”가 활성화 된다. 이를 클릭하여, PR 생성 작업에 들어간다. PR 내용은 리뷰어나 승인자가 판단을 쉽게 할 수 있도록, 최대한 수정 내용을 명확하게 작성한다.
 - 생성된 PR을 확인한다. Upstream repository에 PR 아이템이 생성된 것을 볼 수 있다. 리뷰어나 승인자는 PR의 내용 (파일 수정 사항 등)을 확인하여 의견을 남긴다.
 - 리뷰어가 의견을 준 경우에는 의견에 따라 내용을 수정 후 커밋 및 PR을 업데이트 한다. 업데이트된 PR은 다시 리뷰를 받는다. 기존 PR을 업데이트하기 위해서는 작업 공간(임시 작업 브랜치)에서 파일을 수정, git commit –a –m “Rev 1 xxxxxx” (스태이징 및 커밋), git fetch upstream (최신 정보 업데이트), git rebase upstream/master (최신 버전과 차이 비교 및 로컬 머징), git push origin [PR을 올린 임시 작업 브랜치 이름] --force 를 수행한다. 마지막 push에서는 --force 옵션을 줘야 기존의 PR을 업데이트할 수 있다.
 - 리뷰어가 merge 가능 의견을 남기면, 승인자가 해당 PR을 Master branch로 merge한다.

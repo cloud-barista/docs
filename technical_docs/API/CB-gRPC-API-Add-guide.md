@@ -17,13 +17,13 @@
 
 ## [개요]
 
-Cloud-Barista 에서 gRPC 를 적용한 서비스로는 CB-SPIDER, CB-TUMBLEBUG, CB-DRAGONFLY 가 있다. CB-SPIDER, CB-TUMBLEBUG, CB-DRAGONFLY 서비스 기능은 계속해서 추가되고 있어 gRPC API 도 계속해서 수정 관리할 필요성이 있다. 따라서, 누구나 gRPC API를 추가할 수 있도록 가이드를 제공한다.  
+Cloud-Barista 에서 gRPC 를 적용한 서비스로는 CB-Spider, CB-Tumblebug, CB-Dragonfly 가 있다. CB-Spider, CB-Tumblebug, CB-Dragonfly 서비스 기능은 계속해서 추가되고 있어 gRPC API 도 계속해서 수정 관리할 필요성이 있다. 따라서, 누구나 gRPC API를 추가할 수 있도록 가이드를 제공한다.  
 본 가이드에서는 신규 API를 가상으로 정의하는 것 부터 시작하여 ProtoBuf IDL 작성, 코어 로직 구현, gRPC 서버/클라이언트 구현, Go API 구현, CLI 구현까지 전체 과정을 상세히 소개한다.
 
 ## [신규 API 정의]
 
 가이드를 진행하기 위해서 신규 API를 하나 정의한다.  
-신규 API 는 CB-SPIDER 의 CCM(Clound Control Manager) 에 추가되는 기능으로 가정한다.
+신규 API 는 CB-Spider 의 CCM(Clound Control Manager) 에 추가되는 기능으로 가정한다.
 
 ```
 => 신규API : 클라이언트가 보낸 데이터를 그대로 리턴하는 Echo 기능
@@ -128,7 +128,7 @@ $ go env -w GO111MODULE="on"
 
 ## [코어 로직 구현]
 
-CB-SPIDER 의 CCM(Clound Control Manager) 의 코어 로직이 구현되어 있는 [CCMCommon.go](https://github.com/cloud-barista/cb-spider/blob/master/api-runtime/common-runtime/CCMCommon.go) 파일의 마지막 부분에 다음 코드를 복사한다. CoreEcho() 함수에서는 클라이언트에서 받은 데이터를 그대로 복사해서 다시 반환하는 기능을 구현하고 있으며, 입력과 출력에 해당하는 Struct 구조도 정의하였다. CoreEcho() 함수는 gRPC 뿐만 아니라 REST API 에서도 사용 가능하다.
+CB-Spider 의 CCM(Clound Control Manager) 의 코어 로직이 구현되어 있는 [CCMCommon.go](https://github.com/cloud-barista/cb-spider/blob/master/api-runtime/common-runtime/CCMCommon.go) 파일의 마지막 부분에 다음 코드를 복사한다. CoreEcho() 함수에서는 클라이언트에서 받은 데이터를 그대로 복사해서 다시 반환하는 기능을 구현하고 있으며, 입력과 출력에 해당하는 Struct 구조도 정의하였다. CoreEcho() 함수는 gRPC 뿐만 아니라 REST API 에서도 사용 가능하다.
 
 ```
 type EchoInfo struct {
@@ -159,7 +159,7 @@ func CoreEcho(reqInfo EchoInfo) (*EchoResult, error) {
 
 ## [gRPC 서버 구현]
 
-CB-SPIDER 의 gRPC 서버는 [CBSpiderGRPCRuntime.go](https://github.com/cloud-barista/cb-spider/blob/master/api-runtime/grpc-runtime/CBSpiderGRPCRuntime.go) 파일에서 구현되어 있다. ProtoBuf IDL 에서 정의한 service CCM{} 의 실제 구현 내용은 존재하지 않는다. 사용자가 실제 구현내용을 ProboBuf 에 등록해줘야 한다. CCM(Clound Control Manager) 관련 서비스를 제공하기 위해 실제 구현 내용은 [CCMService](https://github.com/cloud-barista/cb-spider/blob/master/api-runtime/grpc-runtime/service/service.go) 구조체 에서 메쏘드를 정의하고 있으며, CCMService{} 를 RegisterCCMServer() 함수를 이용하여 ProtoBuf 에 등록하게 된다.
+CB-Spider 의 gRPC 서버는 [CBSpiderGRPCRuntime.go](https://github.com/cloud-barista/cb-spider/blob/master/api-runtime/grpc-runtime/CBSpiderGRPCRuntime.go) 파일에서 구현되어 있다. ProtoBuf IDL 에서 정의한 service CCM{} 의 실제 구현 내용은 존재하지 않는다. 사용자가 실제 구현내용을 ProboBuf 에 등록해줘야 한다. CCM(Clound Control Manager) 관련 서비스를 제공하기 위해 실제 구현 내용은 [CCMService](https://github.com/cloud-barista/cb-spider/blob/master/api-runtime/grpc-runtime/service/service.go) 구조체 에서 메쏘드를 정의하고 있으며, CCMService{} 를 RegisterCCMServer() 함수를 이용하여 ProtoBuf 에 등록하게 된다.
 
 ```
 pb.RegisterCCMServer(gs, &grpc_service.CCMService{})
@@ -213,7 +213,7 @@ Echo() 메쏘드는 클라이언트에서 오는 pb.EchoRequest gRPC 메시지�
 
 ## [gRPC 클라이언트 구현]
 
-CB-SPIDER 의 CCM(Clound Control Manager) 관련 gRPC 클라이언트는 [CCMRequest](https://github.com/cloud-barista/cb-spider/blob/master/interface/api/request/request.go) 구조체에 메쏘드로 정의되어 있다. CCMRequest 는 Go API 에서 래핑되어 사용되고 있으며, 사용자는 API 함수를 통해서 CCMRequest 를 쉽게 사용할 수 있게 된다.
+CB-Spider 의 CCM(Clound Control Manager) 관련 gRPC 클라이언트는 [CCMRequest](https://github.com/cloud-barista/cb-spider/blob/master/interface/api/request/request.go) 구조체에 메쏘드로 정의되어 있다. CCMRequest 는 Go API 에서 래핑되어 사용되고 있으며, 사용자는 API 함수를 통해서 CCMRequest 를 쉽게 사용할 수 있게 된다.
 
 CCMRequest 에 Echo() 클라이언트를 정의하기 위해서 [request](https://github.com/cloud-barista/cb-spider/tree/master/interface/api/request) 폴더에 echo.go 파일을 생성해서 다음 코드를 복사한다.
 
@@ -260,7 +260,7 @@ gRPC 클라이언트는 JSON 또는 YAML 문서를 입력받아 gRPC 메시지�
 
 ## [gRPC Go API구현]
 
-CB-SPIDER 의 CCM(Clound Control Manager) 관련 gRPC Go API 는 [ccm.go](https://github.com/cloud-barista/cb-spider/blob/master/interface/api/ccm.go) 파일에 구현되어 있다. API 는 CCMApi 구조체를 통해 제공하고 있으며, 신규 API 도 CCMApi 구조체에 메쏘드로 정의하여 제공한다. ccm.go 파일에 다음 코드를 복사한다.
+CB-Spider 의 CCM(Clound Control Manager) 관련 gRPC Go API 는 [ccm.go](https://github.com/cloud-barista/cb-spider/blob/master/interface/api/ccm.go) 파일에 구현되어 있다. API 는 CCMApi 구조체를 통해 제공하고 있으며, 신규 API 도 CCMApi 구조체에 메쏘드로 정의하여 제공한다. ccm.go 파일에 다음 코드를 복사한다.
 
 ```
 // JSON 또는 YAML 문서의 입력 방식 제공 API

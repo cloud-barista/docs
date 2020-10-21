@@ -20,7 +20,7 @@ Cloud-Barista 서비스들은 상호간에 접속하기 위해 기본으로 REST
 또한, Cloud-Barista는 여러개의 서비스가 상호작용하여 하나의 큰 서비스를 제공하는 마이크로서비스 아키텍처를 지향하고 있다. 마이크로 서비스 아키텍처를 잘 지원할 수 있는 gRPC 프로토콜을 확장 지원하여 사용자의 환경에 알맞게 선택 이용할 수 있게 지원한다. gRPC 프로토콜은 바이너리 프로토콜로 네트워크 트래픽을 상당히 줄일 수 있고, ProtoBuf 가 지원하는 IDL(Interface Definition Language) 로 명확한 API 스펙을 정의하여 서비스 상호간의 데이터 전달 내용을 정확하게 확인할 수 있다.
 
 <br/>
-<img src="api-server.png" width="800">
+<img src="./images/api-server.png" width="800">
 <br/><br/>
 
 Cloud-Barista 는 REST API 단일 서비스 에서 gRPC 서비스로 확장 지원하기 위해 기존의 코드를 리팩토링하여 REST 처리 부분과 서비스 실제 업무를 처리하는 코어 로직으로 분리 했다. 코어 로직으로 분리된 코드는 gRPC 처리할 때 재사용 할 수 있고, 향후 또 다른 프로토콜을 지원할 경우 확장성을 제공할 수 있게 된다.
@@ -50,7 +50,7 @@ Cloud-Barista 의 REST 와 gRPC 서비스를 지원하기 위해 서버를 독�
 Cloud-Barista 서비스에 gRPC 를 적용하기 위한 전체 구조는 다음 그림과 같다. gRPC 를 적용하기 위해서는 CB-Spider, CB-Tumblebug, CB-Dragonfly 서비스 각각의 ProtoBuf IDL 을 정의한다. IDL 파일은 protoc 컴파일 툴을 이용하여 Stub 파일을 생성하게 되고 gRPC 서버와 gRPC Go API 는 Stub 파일을 이용하여 서로 통신을 하게 된다. gRPC 서버와 클라이언트 사이에는 인터셉터를 지정할 수 있으며 로깅, 성능모니터링, 메시지모니터링, 보안등 다양한 기능을 추가할 수 있다. Cloud-Barista CLI(Command Line Interface) 툴은 gRPC Go API 를 이용하여 개발하며, 또한, gRPC Go API 를 이용하면 사용자의 커스터마이즈한 툴을 새롭게 개발 가능하다.
 
 <br/>
-<img src="grpc-architecture.png" width="1000">
+<img src="./images/grpc-architecture.png" width="1000">
 <br/><br/>
 
 ### (1) ProtoBuf 정의

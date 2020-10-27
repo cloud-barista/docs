@@ -2,23 +2,27 @@
 
 ## [목 차]
 
-1. [개요](#개요)
-2. [신규 API 정의](#신규-API-정의)
-3. [ProtoBuf IDL 작성](#ProtoBuf-IDL-작성)
-4. [ProtoBuf 컴파일](#ProtoBuf-컴파일)
-5. [코어 로직 구현](#코어-로직-구현)
-6. [gRPC 서버 구현](#gRPC-서버-구현)
-7. [gRPC 클라이언트 구현](#gRPC-클라이언트-구현)
-8. [gRPC Go API구현](#gRPC-Go-API구현)
-9. [CLI 구현](#CLI-구현)
-10. [CLI 실행](#CLI-실행)
+1. [개요](#개요)  
+2. [신규 API 정의](#신규-API-정의)  
+3. [ProtoBuf IDL 작성](#ProtoBuf-IDL-작성---단계)  
+4. [ProtoBuf 컴파일](#ProtoBuf-컴파일---단계)  
+5. [코어 로직 구현](#코어-로직-구현---단계)  
+6. [gRPC 서버 구현](#gRPC-서버-구현---단계)  
+7. [gRPC 클라이언트 구현](#gRPC-클라이언트-구현---단계)  
+8. [gRPC Go API구현](#gRPC-Go-API구현---단계)  
+9. [CLI 구현](#CLI-구현---단계)  
+10. [CLI 실행](#CLI-실행)  
 
 ---
 
 ## [개요]
 
 Cloud-Barista 에서 gRPC 를 적용한 서비스로는 CB-Spider, CB-Tumblebug, CB-Dragonfly 가 있다. CB-Spider, CB-Tumblebug, CB-Dragonfly 서비스 기능은 계속해서 추가되고 있어 gRPC API 도 계속해서 수정 관리할 필요성이 있다. 따라서, 누구나 gRPC API를 추가할 수 있도록 가이드를 제공한다.  
-본 가이드에서는 신규 API를 가상으로 정의하는 것 부터 시작하여 ProtoBuf IDL 작성, 코어 로직 구현, gRPC 서버/클라이언트 구현, Go API 구현, CLI 구현까지 전체 과정을 상세히 소개한다.
+본 가이드에서는 CB-Spider 신규 API를 가상으로 정의하는 것 부터 시작하여 다음 그림처럼 단계별로 ProtoBuf IDL 작성 및 컴파일, 코어 로직 구현, gRPC 서버/클라이언트 구현, Go API 구현, CLI 구현까지 전체 과정을 상세히 소개한다.
+
+<br/>
+<img src="./images/grpc-api-update-guide.png" width="1000">
+<br/><br/>
 
 ## [신규 API 정의]
 
@@ -66,7 +70,7 @@ spider 명령어에는 -i (입력문서포맷), -o (출력문서포맷), --confi
 $ source setup.env
 ```
 
-## [ProtoBuf IDL 작성]
+## [ProtoBuf IDL 작성 / ① 단계]
 
 [cbspider.proto](https://github.com/cloud-barista/cb-spider/blob/master/api-runtime/grpc-runtime/idl/cbspider/cbspider.proto) 파일에서 CCM 서비스 부분에 Echo 메쏘드를 복사하여 추가한다. 그리고, EchoRequest 와 EchoResponse 메시지도 복사해서 추가한다.  
 ProtoBuf IDL을 작성할 때는 [스타일가이드](https://developers.google.com/protocol-buffers/docs/style)와 [문법](https://developers.google.com/protocol-buffers/docs/proto3)을 먼저 확인하고 작성한다.
@@ -100,7 +104,7 @@ message EchoResponse {
 
 ProtoBuf IDL 은 [gogoprotobuf](https://github.com/gogo/protobuf)을 이용해서 작성하고 있으며, gogoprotobuf 에서 지원하는 태그중에 gogoproto.jsontag 와 gogoproto.moretags 을 사용한다. 지정된 태그를 이용하여 JSON 과 YAML의 마샬링/언마샬링을 지원하고 있으며, Cloud-Barista 서비스에서는 gogoproto.jsontag 기준으로 메시지 정보를 다른 Struct 구조에 데이터를 복사한다. 예로, `(gogoproto.jsontag) = "serverName"` 의 이름과 Struct 에서 정의한 필드의 태그 `` `json:"serverName"` `` 가 같아야 한다.
 
-## [ProtoBuf 컴파일]
+## [ProtoBuf 컴파일 / &#9313; 단계]
 
 ProtoBuf IDL 을 모두 작성했으면 [build_grpc_idl.sh](https://github.com/cloud-barista/cb-spider/blob/master/build_grpc_idl.sh) 스크립트를 실행한다. 그러면, [cbspider.pb.go](https://github.com/cloud-barista/cb-spider/blob/master/api-runtime/grpc-runtime/stub/cbspider/cbspider.pb.go) 라는 Go Stub 파일이 생성된다. cbspider.pb.go 는 grpc 서버와 클라이언트 구현할 때 사용된다.
 
@@ -126,7 +130,7 @@ $ go get -u github.com/gogo/protobuf
 $ go env -w GO111MODULE="on"
 ```
 
-## [코어 로직 구현]
+## [코어 로직 구현 / &#9314; 단계]
 
 CB-Spider 의 CCM(Clound Control Manager) 의 코어 로직이 구현되어 있는 [CCMCommon.go](https://github.com/cloud-barista/cb-spider/blob/master/api-runtime/common-runtime/CCMCommon.go) 파일의 마지막 부분에 다음 코드를 복사한다. CoreEcho() 함수에서는 클라이언트에서 받은 데이터를 그대로 복사해서 다시 반환하는 기능을 구현하고 있으며, 입력과 출력에 해당하는 Struct 구조도 정의하였다. CoreEcho() 함수는 gRPC 뿐만 아니라 REST API 에서도 사용 가능하다.
 
@@ -157,7 +161,7 @@ func CoreEcho(reqInfo EchoInfo) (*EchoResult, error) {
 }
 ```
 
-## [gRPC 서버 구현]
+## [gRPC 서버 구현 / &#9315; 단계]
 
 CB-Spider 의 gRPC 서버는 [CBSpiderGRPCRuntime.go](https://github.com/cloud-barista/cb-spider/blob/master/api-runtime/grpc-runtime/CBSpiderGRPCRuntime.go) 파일에서 구현되어 있다. ProtoBuf IDL 에서 정의한 service CCM{} 의 실제 구현 내용은 존재하지 않는다. 사용자가 실제 구현내용을 ProboBuf 에 등록해줘야 한다. CCM(Clound Control Manager) 관련 서비스를 제공하기 위해 실제 구현 내용은 [CCMService](https://github.com/cloud-barista/cb-spider/blob/master/api-runtime/grpc-runtime/service/service.go) 구조체 에서 메쏘드를 정의하고 있으며, CCMService{} 를 RegisterCCMServer() 함수를 이용하여 ProtoBuf 에 등록하게 된다.
 
@@ -211,7 +215,7 @@ func (s *CCMService) Echo(ctx context.Context, req *pb.EchoRequest) (*pb.EchoRes
 
 Echo() 메쏘드는 클라이언트에서 오는 pb.EchoRequest gRPC 메시지를 cmrt.EchoInfo 로 복사해서 cmrt.CoreEcho() 코어 함수에 넘긴다. 코어 함수는 해당 결과를 반환하고 다시 pb.EchoResponse gRPC 메시지로 복사해서 클라이언트에 다시 전달하게 한다. Echo() 메쏘드에서는 gRPC 데이터 전달 부분만 담당하고 실제 처리는 코어 로직에서 처리하는 구조로 되어 있다
 
-## [gRPC 클라이언트 구현]
+## [gRPC 클라이언트 구현 / &#9316; 단계]
 
 CB-Spider 의 CCM(Clound Control Manager) 관련 gRPC 클라이언트는 [CCMRequest](https://github.com/cloud-barista/cb-spider/blob/master/interface/api/request/request.go) 구조체에 메쏘드로 정의되어 있다. CCMRequest 는 Go API 에서 래핑되어 사용되고 있으며, 사용자는 API 함수를 통해서 CCMRequest 를 쉽게 사용할 수 있게 된다.
 
@@ -258,7 +262,7 @@ func (r *CCMRequest) Echo() (string, error) {
 
 gRPC 클라이언트는 JSON 또는 YAML 문서를 입력받아 gRPC 메시지로 변환하여 서버 함수를 호출하고 결과를 다시 JSON 또는 YAML 문서로 변환하여 제공한다.
 
-## [gRPC Go API구현]
+## [gRPC Go API구현 / &#9317; 단계]
 
 CB-Spider 의 CCM(Clound Control Manager) 관련 gRPC Go API 는 [ccm.go](https://github.com/cloud-barista/cb-spider/blob/master/interface/api/ccm.go) 파일에 구현되어 있다. API 는 CCMApi 구조체를 통해 제공하고 있으며, 신규 API 도 CCMApi 구조체에 메쏘드로 정의하여 제공한다. ccm.go 파일에 다음 코드를 복사한다.
 
@@ -291,7 +295,7 @@ func (ccm *CCMApi) EchoByParam(clientName string, clientMessage string) (string,
 
 EchoByParam() 처럼 파라미터 방식의 API 는 내부적으로 JSON 문서로 변환하여 클라이언트 함수를 호출한다.
 
-## [CLI 구현]
+## [CLI 구현 / &#9318; 단계]
 
 Cloud-Barista 에서 CLI(Command Line Interface)를 개발하기 위해 [cobra](https://github.com/spf13/cobra) 라이브러리를 이용한다. 신규 API 에서 제공하는 명령어는 `echo doc` 과 `echo param` 로 정의하였고, 명령어를 추가하기 위해서는 cobra 를 이용한다. [cmd](https://github.com/cloud-barista/cb-spider/tree/master/interface/cli/spider/cmd) 폴더에 echo.go 파일을 생성하여 다음 코드를 복사한다.
 

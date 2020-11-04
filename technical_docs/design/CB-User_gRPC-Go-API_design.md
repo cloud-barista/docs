@@ -456,7 +456,7 @@ Cloud-Barista 는 사용자에게 커맨드 기반의 관리 툴인 cbadm 과 sp
 
 - cbadm CLI 명령어
 
-  | 루트커맨드 | 서브커맨드1   | 서브커맨드2                                                                                                                                                                                                                         |
+  | 명령어 | 루트커맨드   | 서브커맨드                                                                                                                                                                                                                         |
   | ---------- | ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
   | cbadm      | driver        | create / list / get / delete                                                                                                                                                                                                        |
   |            | credential    | create / list / get / delete                                                                                                                                                                                                        |
@@ -477,7 +477,7 @@ Cloud-Barista 는 사용자에게 커맨드 기반의 관리 툴인 cbadm 과 sp
   - 테스트파일 : [github.com/cloud-barista/cb-tumblebug/src/api/grpc/cbadm/test/official](https://github.com/cloud-barista/cb-tumblebug/tree/master/src/api/grpc/cbadm/test/official)
 
 - spider CLI 명령어
-  | 루트커맨드 | 서브커맨드1 | 서브커맨드2                                                                                |
+  | 명령어 | 루트커멘드 | 서브커맨드                                                                                        |
   | ---------- | ----------- | ------------------------------------------------------------------------------------------ |
   | spider     | os          | list                                                                                       |
   |            | driver      | create / list / get / delete                                                               |

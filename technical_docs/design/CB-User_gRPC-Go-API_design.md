@@ -123,6 +123,7 @@ $ go get github.com/gogo/protobuf/protoc-gen-gofast
 $ go env -w GO111MODULE="off"
 $ go get -u github.com/gogo/protobuf
 $ go env -w GO111MODULE="on"
+$ sudo cp -r $HOME/go/bin/* /usr/local/bin/
 ```
 
 ### (2) gRPC 서버

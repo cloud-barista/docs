@@ -1,5 +1,11 @@
 <p align="center">
-  <img src="https://cloud-barista.github.io/assets/img/blog/3rd-conference/promotion-header_only.jpg">
+<table width="760" id="Table_01" border="0" cellspacing="0" cellpadding="0">
+	<tbody><tr>
+		<td>
+			<img src="https://cloud-barista.github.io/assets/img/blog/3rd-conference/promotion-header_only.jpg" border="0"></td>
+	</tr>
+    </tbody>
+</table>
 </p>
 
 ## 3차 오픈 컨퍼런스 개요
@@ -26,8 +32,7 @@
 | CB-Dragonfly : 전세계 클라우드가 다보여<BR>(멀티 클라우드 통합 모니터링) | 김효경<BR>커뮤니티 멤버 | [[SlideShare]()] [[GitHub](https://github.com/innodreamer/docs/blob/master/openseminar/v0.3.0-espresso/ppt_files/Cloud-Barsita_3rd_conference_05_CB-Dragonfly_Multi-Cloud%20Service%20Monitoring.pdf)] | [[YouTube]()] |
 | Coffee Break |||
 | CB-Larva : 멀티 클라우드의 신규 기능 및 니즈를 찾아서<BR>(Cloud-Barista 실험실) | 김윤곤<BR>인큐베이터 리더 | [[SlideShare](https://url.kr/ZkV4fG)] [[GitHub](https://github.com/innodreamer/docs/blob/master/openseminar/v0.3.0-espresso/ppt_files/Cloud-Barsita_3rd_conference_06_CB-Larva_Cloud-Barista%20Incubator.pdf)] | [[YouTube](https://youtu.be/YRj6TIVRoYg)] |
-| CB-Waterstrider : 멀티 클라우드와 스킨십을<BR>(Cloud-Barista 웹도구) | 정영태<BR>프레임워크 리더 | [[SlideShare](https://url.kr/7trgxW)] [[GitHub](https://github.com/innodreamer/docs/blob/master/openseminar/v0.3.0-espresso/ppt_files/Cloud-Barsita_3rd_conference_07_CB-Waterstrider_Cloud-Barista%20Open%20Interfaces%20and%20Tools.pdf
-)] | [[YouTube](https://youtu.be/gzE9-WkCiDA)] |
+| CB-Waterstrider : 멀티 클라우드와 스킨십을<BR>(Cloud-Barista 웹도구) | 정영태<BR>프레임워크 리더 | [[SlideShare](https://url.kr/7trgxW)] [[GitHub](https://github.com/innodreamer/docs/blob/master/openseminar/v0.3.0-espresso/ppt_files/Cloud-Barsita_3rd_conference_07_CB-Waterstrider_Cloud-Barista%20Open%20Interfaces%20and%20Tools.pdf)] | [[YouTube](https://youtu.be/gzE9-WkCiDA)] |
 | CB-Bridge : 원 클릭으로 Cloud-Barista 운용하기<BR>(Cloud-Barista 운용 관리) | 서지훈<BR>프레임워크 리더 | [[SlideShare](https://url.kr/1jnHeG)] [[GitHub](https://github.com/innodreamer/docs/blob/master/openseminar/v0.3.0-espresso/ppt_files/Cloud-Barsita_3rd_conference_08_CB-Bridge_Cloud-Barista%20Operation%20and%20Management.pdf)] | [[YouTube](https://youtu.be/The18DVUUMM)] |
 | 에필로그 | 강동재<BR>커뮤니티 리더 |  | [[YouTube](https://youtu.be/X36Bn1QM7zo)] |
 <BR>

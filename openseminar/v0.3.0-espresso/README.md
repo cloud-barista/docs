@@ -1,8 +1,7 @@
 <p align="center">
-
-![3rd-conference](https://cloud-barista.github.io/assets/img/blog/3rd-conference/promotion-header_only2.jpg)
+  <img src="https://cloud-barista.github.io/assets/img/blog/3rd-conference/promotion-header_only2.jpg">
 </p>
-
+<BR>
 ## 3차 오픈 컨퍼런스 개요
 * 행사명 : Cloud-Barista 3rd Open Conference<BR>
   * 부제 : “멀티 클라우드로의 여정(Journey to the Multi-Cloud)”
@@ -23,7 +22,7 @@
 | CB-Spider : 전세계 클라우드를 엮는 그날까지<BR>(멀티 클라우드 인프라 연동) | 김병섭<BR>프레임워크 리더<BR>/기술총괄 | [[SlideShare](https://url.kr/T3bJsm)] [[GitHub](https://github.com/cloud-barista/docs/blob/master/openseminar/v0.3.0-espresso/ppt_files/Cloud-Barsita_3rd_conference_02_CB-Spider_Multi-Cloud%20Infrastructure%20Federation.pdf)] | [[YouTube](https://youtu.be/wr3boYDOco4)] | 
 | Coffee Break |||
 | CB-Tumblebug : 멀티 클라우드 인프라 운용 자동화를 위하여<BR>(멀티 클라우드 인프라 운용 관리) | 손석호<BR>프레임워크 리더 | [[SlideShare](https://url.kr/XLqf9B)] [[GitHub](https://github.com/cloud-barista/docs/blob/master/openseminar/v0.3.0-espresso/ppt_files/Cloud-Barsita_3rd_conference_03_CB-Tumblebug_Multi-Cloud%20Infrastructure%20Service%20Management.pdf)] | [[YouTube](https://youtu.be/ah4rL8PLLCw)] |
-| CB-Ladybug : 애플리케이션을 전세계 곳곳으로<BR>(멀티 클라우드 애플리케이션 운용 관리) | 김수영<BR>프레임워크 리더) | [[SlideShare](https://url.kr/wTELja)] [[GitHub](https://github.com/cloud-barista/docs/blob/master/openseminar/v0.3.0-espresso/ppt_files/Cloud-Barsita_3rd_conference_04_CB-Ladybug_Multi-Cloud%20Application%20Service%20Management.pdf)] | [[YouTube](https://youtu.be/EHQCF2TEUIA)] |
+| CB-Ladybug : 애플리케이션을 전세계 곳곳으로<BR>(멀티 클라우드 애플리케이션 운용 관리) | 김수영<BR>프레임워크 리더 | [[SlideShare](https://url.kr/wTELja)] [[GitHub](https://github.com/cloud-barista/docs/blob/master/openseminar/v0.3.0-espresso/ppt_files/Cloud-Barsita_3rd_conference_04_CB-Ladybug_Multi-Cloud%20Application%20Service%20Management.pdf)] | [[YouTube](https://youtu.be/EHQCF2TEUIA)] |
 | CB-Dragonfly : 전세계 클라우드가 다보여<BR>(멀티 클라우드 통합 모니터링) | 김효경<BR>커뮤니티 멤버 | [[SlideShare](https://url.kr/atI4zV)] [[GitHub](https://github.com/cloud-barista/docs/blob/master/openseminar/v0.3.0-espresso/ppt_files/Cloud-Barsita_3rd_conference_05_CB-Dragonfly_Multi-Cloud%20Service%20Monitoring.pdf)] | [[YouTube](https://youtu.be/ySeVPCDXJa0)] |
 | Coffee Break |||
 | CB-Larva : 멀티 클라우드의 신규 기능 및 니즈를 찾아서<BR>(Cloud-Barista 실험실) | 김윤곤<BR>인큐베이터 리더 | [[SlideShare](https://url.kr/ZkV4fG)] [[GitHub](https://github.com/cloud-barista/docs/blob/master/openseminar/v0.3.0-espresso/ppt_files/Cloud-Barsita_3rd_conference_06_CB-Larva_Cloud-Barista%20Incubator.pdf)] | [[YouTube](https://youtu.be/YRj6TIVRoYg)] |

@@ -2,6 +2,7 @@
   <img src="https://cloud-barista.github.io/assets/img/blog/3rd-conference/promotion-header_only2.jpg">
 </p>
 <BR>
+
 ## 3차 오픈 컨퍼런스 개요
 * 행사명 : Cloud-Barista 3rd Open Conference<BR>
   * 부제 : “멀티 클라우드로의 여정(Journey to the Multi-Cloud)”

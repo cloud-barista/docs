@@ -30,4 +30,11 @@
 | CB-Waterstrider : 멀티 클라우드와 스킨십을<BR>(Cloud-Barista 웹도구) | 정영태<BR>프레임워크 리더 | [[SlideShare](https://url.kr/7trgxW)] [[GitHub](https://github.com/cloud-barista/docs/blob/master/openseminar/v0.3.0-espresso/ppt_files/Cloud-Barsita_3rd_conference_07_CB-Waterstrider_Cloud-Barista%20Open%20Interfaces%20and%20Tools.pdf)] | [[YouTube](https://youtu.be/gzE9-WkCiDA)] |
 | CB-Bridge : 원 클릭으로 Cloud-Barista 운용하기<BR>(Cloud-Barista 운용 관리) | 서지훈<BR>프레임워크 리더 | [[SlideShare](https://url.kr/1jnHeG)] [[GitHub](https://github.com/cloud-barista/docs/blob/master/openseminar/v0.3.0-espresso/ppt_files/Cloud-Barsita_3rd_conference_08_CB-Bridge_Cloud-Barista%20Operation%20and%20Management.pdf)] | [[YouTube](https://youtu.be/The18DVUUMM)] |
 | 에필로그 | 강동재<BR>커뮤니티 리더 | - | [[YouTube](https://youtu.be/X36Bn1QM7zo)] |
+
+<BR>
+
+## 3차 오픈 컨퍼런스 질의사항 답변서(Q&A) 다운로드
+
+* [질의 사항 답변서 다운로드](https://github.com/cloud-barista/docs/blob/master/openseminar/v0.3.0-espresso/Cloud-Barista_3rd_Open_Conference-%EC%A7%88%EC%9D%98%EC%82%AC%ED%95%AD_%EB%8B%B5%EB%B3%80%EC%84%9C(QnA).pdf "https://github.com/cloud-barista/docs/blob/master/openseminar/v0.3.0-espresso/Cloud-Barista_3rd_Open_Conference-%EC%A7%88%EC%9D%98%EC%82%AC%ED%95%AD_%EB%8B%B5%EB%B3%80%EC%84%9C(QnA).pdf")
+
 <BR>

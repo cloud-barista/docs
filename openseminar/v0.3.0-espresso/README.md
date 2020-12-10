@@ -35,6 +35,6 @@
 
 ## 3차 오픈 컨퍼런스 질의사항 답변서(Q&A) 다운로드
 
-* [질의 사항 답변서 다운로드](https://github.com/innodreamer/docs/blob/master/openseminar/v0.3.0-espresso/Cloud-Barista_3rd_Open_Conference_QnA_Report.pdf "https://github.com/innodreamer/docs/blob/master/openseminar/v0.3.0-espresso/Cloud-Barista_3rd_Open_Conference_QnA_Report.pdf")
+* [질의 사항 답변서 다운로드](https://github.com/cloud-barista/docs/blob/master/openseminar/v0.3.0-espresso/Cloud-Barista_3rd_Open_Conference_QnA_Report.pdf "https://github.com/cloud-barista/docs/blob/master/openseminar/v0.3.0-espresso/Cloud-Barista_3rd_Open_Conference_QnA_Report.pdf")
 
 <BR>

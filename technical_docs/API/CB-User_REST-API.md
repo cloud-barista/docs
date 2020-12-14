@@ -1,17 +1,9 @@
-# Cloud-Barista User REST API 
-[v0.3.0-espresso](#v0.3.0-espresso) <BR>
-[v0.2.0-cappuccino](#v0.2.0-cappuccino) <BR>
-[v0.1.0-americano](#v0.1.0-americano)
-
+# [ Cloud-Barista User REST API ]
 # v0.3.0-espresso
 ### [클라우드 인프라 연동 정보 통합 관리 (CB-Spider)] 
   * 클라우드 인프라 연결을 위한 정보 등록 및 관리
   * API 규격/샘플 : https://cloud-barista.github.io/rest-api/v0.3.0/spider/ccim/
     * 관리대상: Cloud Driver/Credential/Region:Zone
-
-  * 클라우드 인프라 공통 제어 관리
-  * API 규격/샘플 : https://cloud-barista.github.io/rest-api/v0.3.0/spider/cctm/
-    * 제어대상: Image/Spec/VPC/Subnet/SecurityGroup/KeyPair/VM
 
   * Leader: [@powerkimhub](https://github.com/powerkimhub "https://github.com/powerkimhub")
 

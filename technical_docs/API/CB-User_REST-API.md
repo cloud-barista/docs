@@ -3,7 +3,7 @@
 [v0.2.0-cappuccino](#v0.2.0-cappuccino) <BR>
 [v0.1.0-americano](#v0.1.0-americano)
 
-## v0.3.0-espresso
+# v0.3.0-espresso
 ### [클라우드 인프라 연동 정보 통합 관리 (CB-Spider)] 
   * 클라우드 인프라 연결을 위한 정보 등록 및 관리
   * API 규격/샘플 : https://cloud-barista.github.io/rest-api/v0.3.0/spider/ccim/
@@ -21,24 +21,24 @@
 
 #### [멀티 클라우드 네임스페이스 관리]
   * 작업 공간 분리를 위한 네임스페이스 생성 및 관리
-  * API 규격/샘플 : https://cloud-barista.github.io/cb-tumblebug-api-web/?url=https://raw.githubusercontent.com/cloud-barista/cb-tumblebug/master/src/docs/tbapi-0.3.0.yaml#/Namespace
+  * API 규격/샘플 : [v0.3.0 Namespce API](https://cloud-barista.github.io/cb-tumblebug-api-web/?url=https://raw.githubusercontent.com/cloud-barista/cb-tumblebug/master/src/docs/tbapi-0.3.0.yaml#/Namespace)
   * Leader: [@seokho-son](https://github.com/seokho-son "https://github.com/seokho-son") [@jihoon-seo](https://github.com/jihoon-seo "https://github.com/jihoon-seo")
  
 #### [멀티 클라우드 인프라 자원(MCIR) 관리]
   * MCIR 관련 등록/생성 및 관리
   * API 규격/샘플
-    * Image: https://cloud-barista.github.io/cb-tumblebug-api-web/?url=https://raw.githubusercontent.com/cloud-barista/cb-tumblebug/master/src/docs/tbapi-0.3.0.yaml#/Image
-    *	Spec: https://cloud-barista.github.io/cb-tumblebug-api-web/?url=https://raw.githubusercontent.com/cloud-barista/cb-tumblebug/master/src/docs/tbapi-0.3.0.yaml#/Spec
-    *	VNet: https://cloud-barista.github.io/cb-tumblebug-api-web/?url=https://raw.githubusercontent.com/cloud-barista/cb-tumblebug/master/src/docs/tbapi-0.3.0.yaml#/VNet
-    *	SecurityGroup: https://cloud-barista.github.io/cb-tumblebug-api-web/?url=https://raw.githubusercontent.com/cloud-barista/cb-tumblebug/master/src/docs/tbapi-0.3.0.yaml#/Security%20Group
-    *	AccessKey: https://cloud-barista.github.io/cb-tumblebug-api-web/?url=https://raw.githubusercontent.com/cloud-barista/cb-tumblebug/master/src/docs/tbapi-0.3.0.yaml#/SSH%20Key
+    * Image : [v0.3.0 MCIR API-Image](https://cloud-barista.github.io/cb-tumblebug-api-web/?url=https://raw.githubusercontent.com/cloud-barista/cb-tumblebug/master/src/docs/tbapi-0.3.0.yaml#/Image)
+    *	Spec : [v0.3.0 MCIR API-Spec](https://cloud-barista.github.io/cb-tumblebug-api-web/?url=https://raw.githubusercontent.com/cloud-barista/cb-tumblebug/master/src/docs/tbapi-0.3.0.yaml#/Spec)
+    *	VNet : [v0.3.0 MCIR API-VNet](https://cloud-barista.github.io/cb-tumblebug-api-web/?url=https://raw.githubusercontent.com/cloud-barista/cb-tumblebug/master/src/docs/tbapi-0.3.0.yaml#/VNet)
+    *	SecurityGroup : [v0.3.0 MCIR API-SecurityGroup](https://cloud-barista.github.io/cb-tumblebug-api-web/?url=https://raw.githubusercontent.com/cloud-barista/cb-tumblebug/master/src/docs/tbapi-0.3.0.yaml#/Security%20Group)
+    *	AccessKey : [v0.3.0 MCIR API-AccessKey](https://cloud-barista.github.io/cb-tumblebug-api-web/?url=https://raw.githubusercontent.com/cloud-barista/cb-tumblebug/master/src/docs/tbapi-0.3.0.yaml#/SSH%20Key)
   * Leader: [@jihoon-seo](https://github.com/jihoon-seo "https://github.com/jihoon-seo") [@seokho-son](https://github.com/seokho-son "https://github.com/seokho-son")
  
 #### [멀티 클라우드 인프라 서비스(MCIS) 관리]
   * MCIS 생성/제어 및 관리
   * API 규격/샘플
-    * 생성 및 기본 제어(1): https://cloud-barista.github.io/cb-tumblebug-api-web/?url=https://raw.githubusercontent.com/cloud-barista/cb-tumblebug/master/src/docs/tbapi-0.3.0.yaml#/MCIS
-    * 생성 및 기본 제어(2): https://cloud-barista.github.io/cb-tumblebug-api-web/?url=https://raw.githubusercontent.com/cloud-barista/cb-tumblebug/master/src/docs/tbapi-0.3.0.yaml#/MCIS%20Policy
+    * 생성 및 기본 제어(1) : [v0.3.0 MCIS API(1)](https://cloud-barista.github.io/cb-tumblebug-api-web/?url=https://raw.githubusercontent.com/cloud-barista/cb-tumblebug/master/src/docs/tbapi-0.3.0.yaml#/MCIS)
+    * 생성 및 기본 제어(2) : [v0.3.0 MCIS API(2)](https://cloud-barista.github.io/cb-tumblebug-api-web/?url=https://raw.githubusercontent.com/cloud-barista/cb-tumblebug/master/src/docs/tbapi-0.3.0.yaml#/MCIS%20Policy)
 
   * Leader: [@seokho-son](https://github.com/seokho-son "https://github.com/seokho-son") [@jihoon-seo](https://github.com/jihoon-seo "https://github.com/jihoon-seo")
 
@@ -59,7 +59,7 @@
 <P>
 <BR>
 
-## v0.2.0-cappuccino
+# v0.2.0-cappuccino
 
 ### [클라우드 인프라 연동 정보 통합 관리 (CB-Spider)] 
   * 클라우드 인프라 연결을 위한 정보 등록 및 관리
@@ -96,7 +96,7 @@
 <P>
 <BR>
 
-## v0.1.0-americano
+# v0.1.0-americano
 ### [클라우드 인프라 연동 정보 통합 관리 (CB-Spider)] 
   * 클라우드 인프라 연결을 위한 정보 등록 및 관리
   * API 규격/샘플 : https://cloud-barista.github.io/rest-api/v0.1.0/spider/ccim/

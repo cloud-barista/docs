@@ -1,6 +1,9 @@
-# Cloud-Barista User REST API
+# Cloud-Barista User REST API 
+[v0.3.0-espresso](#v0.3.0-espresso) <BR>
+[v0.2.0-cappuccino](#v0.2.0-cappuccino) <BR>
+[v0.1.0-americano](#v0.1.0-americano)
 
-# v0.3.0-espresso
+## v0.3.0-espresso
 ### [클라우드 인프라 연동 정보 통합 관리 (CB-Spider)] 
   * 클라우드 인프라 연결을 위한 정보 등록 및 관리
   * API 규격/샘플 : https://cloud-barista.github.io/rest-api/v0.3.0/spider/ccim/
@@ -56,7 +59,8 @@
 <P>
 <BR>
 
-# v0.2.0-cappuccino
+## v0.2.0-cappuccino
+
 ### [클라우드 인프라 연동 정보 통합 관리 (CB-Spider)] 
   * 클라우드 인프라 연결을 위한 정보 등록 및 관리
   * API 규격/샘플 : https://cloud-barista.github.io/rest-api/v0.2.0/spider/ccim/
@@ -92,7 +96,7 @@
 <P>
 <BR>
 
-# v0.1.0-americano
+## v0.1.0-americano
 ### [클라우드 인프라 연동 정보 통합 관리 (CB-Spider)] 
   * 클라우드 인프라 연결을 위한 정보 등록 및 관리
   * API 규격/샘플 : https://cloud-barista.github.io/rest-api/v0.1.0/spider/ccim/

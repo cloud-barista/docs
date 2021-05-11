@@ -46,9 +46,6 @@ If you don't see your idea listed, and you think it fits into the goals of this 
 
 When processing a pull request, see [how to open a pull request(Korean)](./contributing/how_to_open_a_pull_request-ko.md)
 
-## Style guide
-If you're writing content, see the [style guide](./contributing/style_guide.md) to help your content match the rest of the project.
-
 ## Setting up your environment
 
 See each framework's guides.

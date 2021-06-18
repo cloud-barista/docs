@@ -13,24 +13,24 @@
 
 #### [멀티 클라우드 네임스페이스 관리]
   * 작업 공간 분리를 위한 네임스페이스 생성 및 관리
-  * API 규격/샘플 : [Namespace API](https://cloud-barista.github.io/cb-tumblebug-api-web/?url=https://raw.githubusercontent.com/cloud-barista/cb-tumblebug/master/src/docs/v0.3.0.yaml#/Namespace)
+  * API 규격/샘플 : [Namespace API](https://cloud-barista.github.io/cb-tumblebug-api-web/?url=https://raw.githubusercontent.com/cloud-barista/cb-tumblebug/master/src/api/rest/docs/v0.3.0.yaml#/Namespace)
   * Leader: [@seokho-son](https://github.com/seokho-son "https://github.com/seokho-son") [@jihoon-seo](https://github.com/jihoon-seo "https://github.com/jihoon-seo")
  
 #### [멀티 클라우드 인프라 자원(MCIR) 관리]
   * MCIR 관련 등록/생성 및 관리
   * API 규격/샘플
-    * Image : [MCIR Image API](https://cloud-barista.github.io/cb-tumblebug-api-web/?url=https://raw.githubusercontent.com/cloud-barista/cb-tumblebug/master/src/docs/v0.3.0.yaml#/Image)
-    *	Spec : [MCIR Spec API](https://cloud-barista.github.io/cb-tumblebug-api-web/?url=https://raw.githubusercontent.com/cloud-barista/cb-tumblebug/master/src/docs/v0.3.0.yaml#/Spec)
-    *	VNet : [MCIR VNet API](https://cloud-barista.github.io/cb-tumblebug-api-web/?url=https://raw.githubusercontent.com/cloud-barista/cb-tumblebug/master/src/docs/v0.3.0.yaml#/VNet)
-    *	SecurityGroup : [MCIR SecurityGroup API](https://cloud-barista.github.io/cb-tumblebug-api-web/?url=https://raw.githubusercontent.com/cloud-barista/cb-tumblebug/master/src/docs/v0.3.0.yaml#/Security%20Group)
-    *	AccessKey : [MCIR AccessKey API](https://cloud-barista.github.io/cb-tumblebug-api-web/?url=https://raw.githubusercontent.com/cloud-barista/cb-tumblebug/master/src/docs/v0.3.0.yaml#/SSH%20Key)
+    * Image : [MCIR Image API](https://cloud-barista.github.io/cb-tumblebug-api-web/?url=https://raw.githubusercontent.com/cloud-barista/cb-tumblebug/master/src/api/rest/docs/v0.3.0.yaml#/Image)
+    *	Spec : [MCIR Spec API](https://cloud-barista.github.io/cb-tumblebug-api-web/?url=https://raw.githubusercontent.com/cloud-barista/cb-tumblebug/master/src/api/rest/docs/v0.3.0.yaml#/Spec)
+    *	VNet : [MCIR VNet API](https://cloud-barista.github.io/cb-tumblebug-api-web/?url=https://raw.githubusercontent.com/cloud-barista/cb-tumblebug/master/src/api/rest/docs/v0.3.0.yaml#/VNet)
+    *	SecurityGroup : [MCIR SecurityGroup API](https://cloud-barista.github.io/cb-tumblebug-api-web/?url=https://raw.githubusercontent.com/cloud-barista/cb-tumblebug/master/src/api/rest/docs/v0.3.0.yaml#/Security%20Group)
+    *	AccessKey : [MCIR AccessKey API](https://cloud-barista.github.io/cb-tumblebug-api-web/?url=https://raw.githubusercontent.com/cloud-barista/cb-tumblebug/master/src/api/rest/docs/v0.3.0.yaml#/SSH%20Key)
   * Leader: [@jihoon-seo](https://github.com/jihoon-seo "https://github.com/jihoon-seo") [@seokho-son](https://github.com/seokho-son "https://github.com/seokho-son")
  
 #### [멀티 클라우드 인프라 서비스(MCIS) 관리]
   * MCIS 생성/제어 및 관리
   * API 규격/샘플
-    * 생성 및 기본 제어 : [MCIS Provisioning and  Lifecycle API](https://cloud-barista.github.io/cb-tumblebug-api-web/?url=https://raw.githubusercontent.com/cloud-barista/cb-tumblebug/master/src/docs/v0.3.0.yaml#/MCIS)
-    * 정책 기반 자동 관리 : [MCIS Auto Management API](https://cloud-barista.github.io/cb-tumblebug-api-web/?url=https://raw.githubusercontent.com/cloud-barista/cb-tumblebug/master/src/docs/v0.3.0.yaml#/MCIS%20Policy)
+    * 생성 및 기본 제어 : [MCIS Provisioning and  Lifecycle API](https://cloud-barista.github.io/cb-tumblebug-api-web/?url=https://raw.githubusercontent.com/cloud-barista/cb-tumblebug/master/src/api/rest/docs/v0.3.0.yaml#/MCIS)
+    * 정책 기반 자동 관리 : [MCIS Auto Management API](https://cloud-barista.github.io/cb-tumblebug-api-web/?url=https://raw.githubusercontent.com/cloud-barista/cb-tumblebug/master/src/api/rest/docs/v0.3.0.yaml#/MCIS%20Policy)
 
   * Leader: [@seokho-son](https://github.com/seokho-son "https://github.com/seokho-son") [@jihoon-seo](https://github.com/jihoon-seo "https://github.com/jihoon-seo")
 

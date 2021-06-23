@@ -27,22 +27,22 @@ Cloud-Barista 는 REST API 단일 서비스 에서 gRPC 서비스로 확장 지�
 
 - REST 서버 Go 파일
   - CB-Spider : [github.com/cloud-barista/cb-spider/api-runtime/rest-runtime/CBSpiderRuntime.go](https://github.com/cloud-barista/cb-spider/blob/master/api-runtime/rest-runtime/CBSpiderRuntime.go)
-  - CB-Tumblebug : [github.com/cloud-barista/cb-tumblebug/src/api/rest/server/server.go](https://github.com/cloud-barista/cb-tumblebug/blob/master/src/api/rest/server/server.go)
+  - CB-Tumblebug : [github.com/cloud-barista/cb-tumblebug/src/api/rest/server/server.go](https://github.com/cloud-barista/cb-tumblebug/blob/main/src/api/rest/server/server.go)
   - CB-Dragonfly : [github.com/cloud-barista/cb-dragonfly/pkg/manager/apiserver.go](https://github.com/cloud-barista/cb-dragonfly/blob/feature/grpc/pkg/manager/apiserver.go)
 - gRPC 서버 Go 파일
   - CB-Spider : [github.com/cloud-barista/cb-spider/api-runtime/grpc-runtime/CBSpiderGRPCRuntime.go](https://github.com/cloud-barista/cb-spider/blob/master/api-runtime/grpc-runtime/CBSpiderGRPCRuntime.go)
-  - CB-Tumblebug : [github.com/cloud-barista/cb-tumblebug/src/api/grpc/server/server.go](https://github.com/cloud-barista/cb-tumblebug/blob/master/src/api/grpc/server/server.go)
+  - CB-Tumblebug : [github.com/cloud-barista/cb-tumblebug/src/api/grpc/server/server.go](https://github.com/cloud-barista/cb-tumblebug/blob/main/src/api/grpc/server/server.go)
   - CB-Dragonfly : [github.com/cloud-barista/cb-dragonfly/pkg/api/grpc/server/server.go](https://github.com/cloud-barista/cb-dragonfly/blob/feature/grpc/pkg/api/grpc/server/server.go)
 - 코어 로직 패키지
   - CB-Spider : [github.com/cloud-barista/cb-spider/api-runtime/common-runtime](https://github.com/cloud-barista/cb-spider/tree/master/api-runtime/common-runtime)
-  - CB-Tumblebug : [github.com/cloud-barista/cb-tumblebug/src/core](https://github.com/cloud-barista/cb-tumblebug/tree/master/src/core)
+  - CB-Tumblebug : [github.com/cloud-barista/cb-tumblebug/src/core](https://github.com/cloud-barista/cb-tumblebug/tree/main/src/core)
   - CB-Dragonfly : [github.com/cloud-barista/cb-dragonfly/pkg/core](https://github.com/cloud-barista/cb-dragonfly/tree/feature/grpc/pkg/core)
 
 Cloud-Barista 의 REST 와 gRPC 서비스를 지원하기 위해 서버를 독립적으로 실행할 경우 두개의 서버를 관리해야 하는 불편한 점을 개선하기 위해 API 통합서버를 제공한다. API 통합서버는 REST 서버와 gRPC 서버를 Goroutine 를 이용하여 동시에 실행하고, 서버 포트는 REST 와 gRPC 를 분리하여 제공하는 Dual Port 를 사용한다.
 
 - API 통합서버 Go 파일
   - CB-Spider : [github.com/cloud-barista/cb-spider/api-runtime/apiserver.go](https://github.com/cloud-barista/cb-spider/blob/master/api-runtime/apiserver.go)
-  - CB-Tumblebug : [github.com/cloud-barista/cb-tumblebug/src/main.go](https://github.com/cloud-barista/cb-tumblebug/blob/master/src/main.go)
+  - CB-Tumblebug : [github.com/cloud-barista/cb-tumblebug/src/main.go](https://github.com/cloud-barista/cb-tumblebug/blob/main/src/main.go)
   - CB-Dragonfly : [github.com/cloud-barista/cb-dragonfly/pkg/manager/main/main.go](https://github.com/cloud-barista/cb-dragonfly/blob/feature/grpc/pkg/manager/main/main.go)
 
 ## [gRPC 적용 구조]
@@ -76,7 +76,7 @@ Cloud-Barista 서비스 중에서 CB-Spider, CB-Tumblebug, CB-Dragonfly 의 gRPC
   service UTILITY { } // Utility 관련 rpc 메쏘드 정의
   ```
 
-  - IDL 파일 : [github.com/cloud-barista/cb-tumblebug/src/api/grpc/protobuf/cbtumblebug/cbtumblebug.proto](https://github.com/cloud-barista/cb-tumblebug/blob/master/src/api/grpc/protobuf/cbtumblebug/cbtumblebug.proto)
+  - IDL 파일 : [github.com/cloud-barista/cb-tumblebug/src/api/grpc/protobuf/cbtumblebug/cbtumblebug.proto](https://github.com/cloud-barista/cb-tumblebug/blob/main/src/api/grpc/protobuf/cbtumblebug/cbtumblebug.proto)
 
 - CB-Dragonfly IDL 파일인 cbdragonfly.proto 에는 1개의 service 정의로 구성한다.
 
@@ -99,12 +99,12 @@ message MessageResponse {
 - ProtoBuf 컴파일 스크립트 파일
 
   - CB-Spider : [github.com/cloud-barista/cb-spider/build_grpc_idl.sh](https://github.com/cloud-barista/cb-spider/blob/master/build_grpc_idl.sh)
-  - CB-Tumblebug : [github.com/cloud-barista/cb-tumblebug/src/api/grpc/protobuf/Makefile](https://github.com/cloud-barista/cb-tumblebug/blob/master/src/api/grpc/protobuf/Makefile)
+  - CB-Tumblebug : [github.com/cloud-barista/cb-tumblebug/src/api/grpc/protobuf/Makefile](https://github.com/cloud-barista/cb-tumblebug/blob/main/src/api/grpc/protobuf/Makefile)
   - CB-Dragonfly : [github.com/cloud-barista/cb-dragonfly/pkg/api/grpc/protobuf/Makefile](https://github.com/cloud-barista/cb-dragonfly/blob/feature/grpc/pkg/api/grpc/protobuf/Makefile)
 
 - 생성된 Stub 파일
   - CB-Spider : [github.com/cloud-barista/cb-spider/api-runtime/grpc-runtime/stub/cbspider/cbspider.pb.go](https://github.com/cloud-barista/cb-spider/blob/master/api-runtime/grpc-runtime/stub/cbspider/cbspider.pb.go)
-  - CB-Tumblebug : [github.com/cloud-barista/cb-tumblebug/src/api/grpc/protobuf/cbtumblebug/cbtumblebug.pb.go](https://github.com/cloud-barista/cb-tumblebug/blob/master/src/api/grpc/protobuf/cbtumblebug/cbtumblebug.pb.go)
+  - CB-Tumblebug : [github.com/cloud-barista/cb-tumblebug/src/api/grpc/protobuf/cbtumblebug/cbtumblebug.pb.go](https://github.com/cloud-barista/cb-tumblebug/blob/main/src/api/grpc/protobuf/cbtumblebug/cbtumblebug.pb.go)
   - CB-Dragonfly : [github.com/cloud-barista/cb-dragonfly/pkg/api/grpc/protobuf/cbdragonfly/cbdragonfly.pb.go](https://github.com/cloud-barista/cb-dragonfly/blob/feature/grpc/pkg/api/grpc/protobuf/cbdragonfly/cbdragonfly.pb.go)
 
 ProtoBuf 컴파일 스크립트 파일은 protoc 와 gogoprotobuf 툴을 이용한다. 설치가 되어 있지 않다면 설치를 먼저 해야 한다.
@@ -162,14 +162,14 @@ Cloud-Barista 의 gRPC 서버는 ProtoBuf IDL 에서 생성된 Stub 파일을 �
 
   - struct 정의 파일
 
-    - [github.com/cloud-barista/cb-tumblebug/src/api/grpc/server/common/common.go](https://github.com/cloud-barista/cb-tumblebug/blob/master/src/api/grpc/server/common/common.go)
-    - [github.com/cloud-barista/cb-tumblebug/src/api/grpc/server/mcir/mcir.go](https://github.com/cloud-barista/cb-tumblebug/blob/master/src/api/grpc/server/mcir/mcir.go)
-    - [github.com/cloud-barista/cb-tumblebug/src/api/grpc/server/mcis/mcis.go](https://github.com/cloud-barista/cb-tumblebug/blob/master/src/api/grpc/server/mcis/mcis.go)
+    - [github.com/cloud-barista/cb-tumblebug/src/api/grpc/server/common/common.go](https://github.com/cloud-barista/cb-tumblebug/blob/main/src/api/grpc/server/common/common.go)
+    - [github.com/cloud-barista/cb-tumblebug/src/api/grpc/server/mcir/mcir.go](https://github.com/cloud-barista/cb-tumblebug/blob/main/src/api/grpc/server/mcir/mcir.go)
+    - [github.com/cloud-barista/cb-tumblebug/src/api/grpc/server/mcis/mcis.go](https://github.com/cloud-barista/cb-tumblebug/blob/main/src/api/grpc/server/mcis/mcis.go)
 
   - RPC 메쏘드 구현 폴더
-    - [github.com/cloud-barista/cb-tumblebug/src/api/grpc/server/common](https://github.com/cloud-barista/cb-tumblebug/blob/master/src/api/grpc/server/common)
-    - [github.com/cloud-barista/cb-tumblebug/src/api/grpc/server/mcir](https://github.com/cloud-barista/cb-tumblebug/blob/master/src/api/grpc/server/mcir)
-    - [github.com/cloud-barista/cb-tumblebug/src/api/grpc/server/mcis](https://github.com/cloud-barista/cb-tumblebug/blob/master/src/api/grpc/server/mcis)
+    - [github.com/cloud-barista/cb-tumblebug/src/api/grpc/server/common](https://github.com/cloud-barista/cb-tumblebug/blob/main/src/api/grpc/server/common)
+    - [github.com/cloud-barista/cb-tumblebug/src/api/grpc/server/mcir](https://github.com/cloud-barista/cb-tumblebug/blob/main/src/api/grpc/server/mcir)
+    - [github.com/cloud-barista/cb-tumblebug/src/api/grpc/server/mcis](https://github.com/cloud-barista/cb-tumblebug/blob/main/src/api/grpc/server/mcis)
 
   RPC 메쏘드를 구현한 구조체를 Register<IDL서비스이름>Server() 함수를 이용하여 등록한다.
 
@@ -180,7 +180,7 @@ Cloud-Barista 의 gRPC 서버는 ProtoBuf IDL 에서 생성된 Stub 파일을 �
   pb.RegisterMCISServer(gs, &grpc_mcis.MCISService{})
   ```
 
-  - gRPC 서버 파일 : [github.com/cloud-barista/cb-tumblebug/src/api/grpc/server/server.go](https://github.com/cloud-barista/cb-tumblebug/blob/master/src/api/grpc/server/server.go)
+  - gRPC 서버 파일 : [github.com/cloud-barista/cb-tumblebug/src/api/grpc/server/server.go](https://github.com/cloud-barista/cb-tumblebug/blob/main/src/api/grpc/server/server.go)
 
 - CB-Dragonfly 의 RPC 메쏘드를 구현하기 위해 IDL 파일에서 1개의 service 정의만큼 대응하는 1개의 구조체를 정의한다.
 
@@ -255,13 +255,13 @@ myConn, err := grpc.Dial(serverAddr, 
 - Cloud-Barista gRPC 서버 인터셉터 등록
 
   - CB-Spider : [github.com/cloud-barista/cb-spider/api-runtime/grpc-runtime/common/cbserver.go](https://github.com/cloud-barista/cb-spider/blob/master/api-runtime/grpc-runtime/common/cbserver.go)
-  - CB-Tumblebug : [github.com/cloud-barista/cb-tumblebug/src/api/grpc/common/cbserver.go](https://github.com/cloud-barista/cb-tumblebug/blob/master/src/api/grpc/common/cbserver.go)
+  - CB-Tumblebug : [github.com/cloud-barista/cb-tumblebug/src/api/grpc/common/cbserver.go](https://github.com/cloud-barista/cb-tumblebug/blob/main/src/api/grpc/common/cbserver.go)
   - CB-Dragonfly : [github.com/cloud-barista/cb-dragonfly/pkg/api/grpc/common/cbserver.go](https://github.com/cloud-barista/cb-dragonfly/blob/feature/grpc/pkg/api/grpc/common/cbserver.go)
 
 - Cloud-Barista gRPC 클라이언트 인터셉터 등록
 
   - CB-Spider : [github.com/cloud-barista/cb-spider/api-runtime/grpc-runtime/common/cbconnection.go](https://github.com/cloud-barista/cb-spider/blob/master/api-runtime/grpc-runtime/common/cbconnection.go)
-  - CB-Tumblebug : [github.com/cloud-barista/cb-tumblebug/src/api/grpc/common/cbconnection.go](https://github.com/cloud-barista/cb-tumblebug/blob/master/src/api/grpc/common/cbconnection.go)
+  - CB-Tumblebug : [github.com/cloud-barista/cb-tumblebug/src/api/grpc/common/cbconnection.go](https://github.com/cloud-barista/cb-tumblebug/blob/main/src/api/grpc/common/cbconnection.go)
   - CB-Dragonfly : [github.com/cloud-barista/cb-dragonfly/pkg/api/grpc/common/cbconnection.go](https://github.com/cloud-barista/cb-dragonfly/blob/feature/grpc/pkg/api/grpc/common/cbconnection.go)
 
 CB-Spider, CB-Tumblebug, CB-Dragonfly 의 gRPC 인터셉터는 accesslog, recovery, auth_jwt, promethus_metrics, opentracing 을 지원한다. 인터셉터는 grpc_conf.yaml 라는 환경설정 파일에서 사용여부를 선택할 수 있다.
@@ -269,7 +269,7 @@ CB-Spider, CB-Tumblebug, CB-Dragonfly 의 gRPC 인터셉터는 accesslog, recove
 - accesslog : gRPC 메시지의 요청 및 응답을 로그에 기록하는 기능을 제공하며, 서버와 클라이언트 모두에서 사용가능하다. accesslog 는 사용여부 선택이 제공하지 않으며 항상 사용하게 된다.
 
   - CB-Spider 구현 패키지 : [github.com/cloud-barista/cb-spider/api-runtime/grpc-runtime/interceptors/accesslog](https://github.com/cloud-barista/cb-spider/tree/master/api-runtime/grpc-runtime/interceptors/accesslog)
-  - CB-Tumblebug 구현 패키지 : [github.com/cloud-barista/cb-tumblebug/src/api/grpc/interceptors/accesslog](https://github.com/cloud-barista/cb-tumblebug/tree/master/src/api/grpc/interceptors/accesslog)
+  - CB-Tumblebug 구현 패키지 : [github.com/cloud-barista/cb-tumblebug/src/api/grpc/interceptors/accesslog](https://github.com/cloud-barista/cb-tumblebug/tree/main/src/api/grpc/interceptors/accesslog)
   - CB-Dragonfly 구현 패키지 : [github.com/cloud-barista/cb-dragonfly/pkg/api/grpc/interceptors/accesslog](https://github.com/cloud-barista/cb-dragonfly/tree/feature/grpc/pkg/api/grpc/interceptors/accesslog)
 
 - recovery : gRPC 서버에서 panic 발생시 gRPC 에러로 변환하는 기능을 제공하며, 서버에서만 사용 가능하다. recovery 는 사용여부 선택이 제공하지 않으며 항상 사용하게 된다. [go-grpc-middleware](https://github.com/grpc-ecosystem/go-grpc-middleware) 라이브러리에서 [grpc_recovery](https://github.com/grpc-ecosystem/go-grpc-middleware/tree/master/recovery) 패키지를 이용한다.
@@ -277,7 +277,7 @@ CB-Spider, CB-Tumblebug, CB-Dragonfly 의 gRPC 인터셉터는 accesslog, recove
 - auth_jwt : JWT(JSON Web Token) 를 이용하여 인증을 제공하는 기능을 제공하며, 서버와 클라이언트에서 모두에서 사용가능하다. grpc_conf.yaml 라는 환경설정 파일에서 사용여부를 선택할 수 있다.
 
   - CB-Spider 구현 패키지 : [github.com/cloud-barista/cb-spider/api-runtime/grpc-runtime/interceptors/authjwt](https://github.com/cloud-barista/cb-spider/tree/master/api-runtime/grpc-runtime/interceptors/authjwt)
-  - CB-Tumblebug 구현 패키지 : [github.com/cloud-barista/cb-tumblebug/src/api/grpc/interceptors/authjwt](https://github.com/cloud-barista/cb-tumblebug/tree/master/src/api/grpc/interceptors/authjwt)
+  - CB-Tumblebug 구현 패키지 : [github.com/cloud-barista/cb-tumblebug/src/api/grpc/interceptors/authjwt](https://github.com/cloud-barista/cb-tumblebug/tree/main/src/api/grpc/interceptors/authjwt)
   - CB-Dragonfly 구현 패키지 : [github.com/cloud-barista/cb-dragonfly/pkg/api/grpc/interceptors/authjwt](https://github.com/cloud-barista/cb-dragonfly/tree/feature/grpc/pkg/api/grpc/interceptors/authjwt)
 
 - promethus_metrics : gRPC 에서 Prometheus 성능 모니터링 기능을 제공하며, 서버에서만 사용 가능하다. grpc_conf.yaml 라는 환경설정 파일에서 사용여부를 선택할 수 있다. [go-grpc-prometheus](https://github.com/grpc-ecosystem/go-grpc-prometheus) 라이브러리를 이용한다.
@@ -310,14 +310,14 @@ Cloud-Barista 의 gRPC Go API 는 gRPC 클라이언트를 래핑해서 사용한
 
   - struct 정의 파일
 
-    - [github.com/cloud-barista/cb-tumblebug/src/api/grpc/request/common/common.go](https://github.com/cloud-barista/cb-tumblebug/blob/master/src/api/grpc/request/common/common.go)
-    - [github.com/cloud-barista/cb-tumblebug/src/api/grpc/request/mcir/mcir.go](https://github.com/cloud-barista/cb-tumblebug/blob/master/src/api/grpc/request/mcir/mcir.go)
-    - [github.com/cloud-barista/cb-tumblebug/src/api/grpc/request/mcis/mcis.go](https://github.com/cloud-barista/cb-tumblebug/blob/master/src/api/grpc/request/mcis/mcis.go)
+    - [github.com/cloud-barista/cb-tumblebug/src/api/grpc/request/common/common.go](https://github.com/cloud-barista/cb-tumblebug/blob/main/src/api/grpc/request/common/common.go)
+    - [github.com/cloud-barista/cb-tumblebug/src/api/grpc/request/mcir/mcir.go](https://github.com/cloud-barista/cb-tumblebug/blob/main/src/api/grpc/request/mcir/mcir.go)
+    - [github.com/cloud-barista/cb-tumblebug/src/api/grpc/request/mcis/mcis.go](https://github.com/cloud-barista/cb-tumblebug/blob/main/src/api/grpc/request/mcis/mcis.go)
 
   - RPC 메쏘드 호출 구현 폴더
-    - [github.com/cloud-barista/cb-tumblebug/src/api/grpc/request/common](https://github.com/cloud-barista/cb-tumblebug/tree/master/src/api/grpc/request/common)
-    - [github.com/cloud-barista/cb-tumblebug/src/api/grpc/request/mcir](https://github.com/cloud-barista/cb-tumblebug/tree/master/src/api/grpc/request/mcir)
-    - [github.com/cloud-barista/cb-tumblebug/src/api/grpc/request/mcis](https://github.com/cloud-barista/cb-tumblebug/tree/master/src/api/grpc/request/mcis)
+    - [github.com/cloud-barista/cb-tumblebug/src/api/grpc/request/common](https://github.com/cloud-barista/cb-tumblebug/tree/main/src/api/grpc/request/common)
+    - [github.com/cloud-barista/cb-tumblebug/src/api/grpc/request/mcir](https://github.com/cloud-barista/cb-tumblebug/tree/main/src/api/grpc/request/mcir)
+    - [github.com/cloud-barista/cb-tumblebug/src/api/grpc/request/mcis](https://github.com/cloud-barista/cb-tumblebug/tree/main/src/api/grpc/request/mcis)
 
 - CB-Dragonfly 의 RPC 메쏘드를 서버에 호출하기 위해 IDL 파일에서 1개의 service 정의만큼 대응하는 1개의 구조체를 정의한다.
 
@@ -348,9 +348,9 @@ gRPC Go API 도 IDL 에서 정의된 service 에 대응해서 구조체를 이�
   type MCISApi struct {} // MCIS(멀티 클라우드 인프라 서비스) 관련 API 구현
   ```
 
-  - NS API 파일 : [github.com/cloud-barista/cb-tumblebug/src/api/grpc/request/nsapi.go](https://github.com/cloud-barista/cb-tumblebug/blob/master/src/api/grpc/request/nsapi.go)
-  - MCIR API 파일 : [github.com/cloud-barista/cb-tumblebug/src/api/grpc/request/mcirapi.go](https://github.com/cloud-barista/cb-tumblebug/blob/master/src/api/grpc/request/mcirapi.go)
-  - MCIS API 파일 : [github.com/cloud-barista/cb-tumblebug/src/api/grpc/request/mcisapi.go](https://github.com/cloud-barista/cb-tumblebug/blob/master/src/api/grpc/request/mcisapi.go)
+  - NS API 파일 : [github.com/cloud-barista/cb-tumblebug/src/api/grpc/request/nsapi.go](https://github.com/cloud-barista/cb-tumblebug/blob/main/src/api/grpc/request/nsapi.go)
+  - MCIR API 파일 : [github.com/cloud-barista/cb-tumblebug/src/api/grpc/request/mcirapi.go](https://github.com/cloud-barista/cb-tumblebug/blob/main/src/api/grpc/request/mcirapi.go)
+  - MCIS API 파일 : [github.com/cloud-barista/cb-tumblebug/src/api/grpc/request/mcisapi.go](https://github.com/cloud-barista/cb-tumblebug/blob/main/src/api/grpc/request/mcisapi.go)
 
 - CB-Dragonfly 의 API 구현을 위해 IDL 파일에서 1개의 service 정의만큼 대응하는 1개의 구조체를 정의한다.
 
@@ -448,7 +448,7 @@ func ConfigCIMApiTest() {
 - API 전체 샘플 코드 위치
 
   - CB-Spider : [github.com/cloud-barista/cb-spiderinterface/api/test/test_api.go](https://github.com/cloud-barista/cb-spider/blob/master/interface/api/test/test_api.go)
-  - CB-Tumblebug : [github.com/cloud-barista/cb-tumblebug/src/api/grpc/request/test/test_api.go](https://github.com/cloud-barista/cb-tumblebug/blob/master/src/api/grpc/request/test/test_api.go)
+  - CB-Tumblebug : [github.com/cloud-barista/cb-tumblebug/src/api/grpc/request/test/test_api.go](https://github.com/cloud-barista/cb-tumblebug/blob/main/src/api/grpc/request/test/test_api.go)
   - CB-Dragonfly : [github.com/cloud-barista/cb-dragonfly/pkg/api/grpc/request/test/test_api.go](https://github.com/cloud-barista/cb-dragonfly/blob/feature/grpc/pkg/api/grpc/request/test/test_api.go)
 
 ### (5) CLI(Command Line Interface)
@@ -472,10 +472,10 @@ Cloud-Barista 는 사용자에게 커맨드 기반의 관리 툴인 cbadm 과 sp
   |            | mcis          | create / list / get / delete / status / suspend / resume / reboot / terminate /<br> add-vm / list-vm / get-vm / del-vm / status-vm / suspend-vm / resume-vm /<br> reboot-vm / terminate-vm / command / command-vm / deploy-milkyway |
   |            |               |                                                                                                                                                                                                                                     |
 
-  - 구현파일 : [github.com/cloud-barista/cb-tumblebug/src/api/grpc/cbadm](https://github.com/cloud-barista/cb-tumblebug/tree/master/src/api/grpc/cbadm)
+  - 구현파일 : [github.com/cloud-barista/cb-tumblebug/src/api/grpc/cbadm](https://github.com/cloud-barista/cb-tumblebug/tree/main/src/api/grpc/cbadm)
     - [CB-Spider 의 cbadm 은 driver/credential/region/connect-infos 커멘드만 구현됨](https://github.com/cloud-barista/cb-spider/tree/master/interface/cli/cbadm)
-  - 빌드파일 : [github.com/cloud-barista/cb-tumblebug/src/api/grpc/cbadm/Makefile](https://github.com/cloud-barista/cb-tumblebug/blob/master/src/api/grpc/cbadm/Makefile)
-  - 테스트파일 : [github.com/cloud-barista/cb-tumblebug/src/api/grpc/cbadm/test/official](https://github.com/cloud-barista/cb-tumblebug/tree/master/src/api/grpc/cbadm/test/official)
+  - 빌드파일 : [github.com/cloud-barista/cb-tumblebug/src/api/grpc/cbadm/Makefile](https://github.com/cloud-barista/cb-tumblebug/blob/main/src/api/grpc/cbadm/Makefile)
+  - 테스트파일 : [github.com/cloud-barista/cb-tumblebug/src/api/grpc/cbadm/test/official](https://github.com/cloud-barista/cb-tumblebug/tree/main/src/api/grpc/cbadm/test/official)
 
 - spider CLI 명령어
   | 명령어 | 루트커멘드 | 서브커맨드                                                                                        |
@@ -505,7 +505,7 @@ CB-Spider, CB-Tumblebug, CB-Dragonfly 의 gRPC 인터셉터중에서 promethus_m
 - grpc-backend-compose.yaml 파일 위치
 
   - CB-Spider : [github.com/cloud-barista/cb-spider/utils/docker/grpc-backend-compose.yaml](https://github.com/cloud-barista/cb-spider/blob/master/utils/docker/grpc-backend-compose.yaml)
-  - CB-Tumblebug : [github.com/cloud-barista/cb-tumblebug/src/api/grpc/docker/grpc-backend-compose.yaml](https://github.com/cloud-barista/cb-tumblebug/blob/master/src/api/grpc/docker/grpc-backend-compose.yaml)
+  - CB-Tumblebug : [github.com/cloud-barista/cb-tumblebug/src/api/grpc/docker/grpc-backend-compose.yaml](https://github.com/cloud-barista/cb-tumblebug/blob/main/src/api/grpc/docker/grpc-backend-compose.yaml)
   - CB-Dragonfly : [github.com/cloud-barista/cb-dragonfly/pkg/api/grpc/docker/grpc-backend-compose.yaml](https://github.com/cloud-barista/cb-dragonfly/blob/feature/grpc/pkg/api/grpc/docker/grpc-backend-compose.yaml)
 
 - 백엔드 서버 시작
@@ -545,7 +545,7 @@ CB-Spider, CB-Tumblebug, CB-Dragonfly 의 gRPC 인터셉터중에서 promethus_m
 
   - 스크립트 파일 위치
     - CB-Spider : [github.com/cloud-barista/cb-spider/api-runtime/grpc-runtime/cert-gen/gen_certs.sh](https://github.com/cloud-barista/cb-spider/blob/master/api-runtime/grpc-runtime/cert-gen/gen_certs.sh)
-    - CB-Tumblebug : [github.com/cloud-barista/cb-tumblebug/src/api/grpc/cert-gen/gen_certs.sh](https://github.com/cloud-barista/cb-tumblebug/blob/master/src/api/grpc/cert-gen/gen_certs.sh)
+    - CB-Tumblebug : [github.com/cloud-barista/cb-tumblebug/src/api/grpc/cert-gen/gen_certs.sh](https://github.com/cloud-barista/cb-tumblebug/blob/main/src/api/grpc/cert-gen/gen_certs.sh)
     - CB-Dragonfly : [github.com/cloud-barista/cb-dragonfly/pkg/api/grpc/cert-gen/gen_certs.sh](https://github.com/cloud-barista/cb-dragonfly/blob/feature/grpc/pkg/api/grpc/cert-gen/gen_certs.sh)
 
 - JWT 토큰 지원  
@@ -557,7 +557,7 @@ CB-Spider, CB-Tumblebug, CB-Dragonfly 의 gRPC 인터셉터중에서 promethus_m
 
   - jwt_gen.go 파일 위치
     - CB-Spider : [github.com/cloud-barista/cb-spider/api-runtime/grpc-runtime/jwt-gen/jwt_gen.go](https://github.com/cloud-barista/cb-spider/blob/master/api-runtime/grpc-runtime/jwt-gen/jwt_gen.go)
-    - CB-Tumblebug : [github.com/cloud-barista/cb-tumblebug/src/api/grpc/jwt-gen/jwt_gen.go](https://github.com/cloud-barista/cb-tumblebug/blob/master/src/api/grpc/jwt-gen/jwt_gen.go)
+    - CB-Tumblebug : [github.com/cloud-barista/cb-tumblebug/src/api/grpc/jwt-gen/jwt_gen.go](https://github.com/cloud-barista/cb-tumblebug/blob/main/src/api/grpc/jwt-gen/jwt_gen.go)
     - CB-Dragonfly : [github.com/cloud-barista/cb-dragonfly/pkg/api/grpc/jwt-gen/jwt_gen.go](https://github.com/cloud-barista/cb-dragonfly/blob/feature/grpc/pkg/api/grpc/jwt-gen/jwt_gen.go)
 
 ## [gRPC 설정 파일]
@@ -610,7 +610,7 @@ grpc:
 ```
 
 - CB-Spider 서버 설정 파일 : [github.com/cloud-barista/cb-spider/conf/grpc_conf.yaml](https://github.com/cloud-barista/cb-spider/blob/master/conf/grpc_conf.yaml)
-- CB-Tumblebug 서버 설정 파일 : [github.com/cloud-barista/cb-tumblebug/conf/grpc_conf.yaml](https://github.com/cloud-barista/cb-tumblebug/blob/master/conf/grpc_conf.yaml)
+- CB-Tumblebug 서버 설정 파일 : [github.com/cloud-barista/cb-tumblebug/conf/grpc_conf.yaml](https://github.com/cloud-barista/cb-tumblebug/blob/main/conf/grpc_conf.yaml)
 - CB-Dragonfly 서버 설정 파일 : [github.com/cloud-barista/cb-dragonfly/conf/grpc_conf.yaml](https://github.com/cloud-barista/cb-dragonfly/blob/feature/grpc/conf/grpc_conf.yaml)
 
 ### (3) gRPC 클라이언트 설정 파일
@@ -636,5 +636,5 @@ grpc:
 ```
 
 - CB-Spider 클라이언트 설정 파일 : [github.com/cloud-barista/cb-spider/interface/grpc_conf.yaml](https://github.com/cloud-barista/cb-spider/blob/master/interface/grpc_conf.yaml)
-- CB-Tumblebug 클라이언트 설정 파일 : [github.com/cloud-barista/cb-tumblebug/src/api/grpc/cbadm/grpc_conf.yaml](https://github.com/cloud-barista/cb-tumblebug/blob/master/src/api/grpc/cbadm/grpc_conf.yaml)
+- CB-Tumblebug 클라이언트 설정 파일 : [github.com/cloud-barista/cb-tumblebug/src/api/grpc/cbadm/grpc_conf.yaml](https://github.com/cloud-barista/cb-tumblebug/blob/main/src/api/grpc/cbadm/grpc_conf.yaml)
 - CB-Dragonfly 클라이언트 설정 파일 : [github.com/cloud-barista/cb-dragonfly/pkg/api/grpc/request/test/grpc_conf.yaml](https://github.com/cloud-barista/cb-dragonfly/blob/feature/grpc/pkg/api/grpc/request/test/grpc_conf.yaml)

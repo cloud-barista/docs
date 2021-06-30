@@ -1,4 +1,4 @@
-# Cloud-Barista development documentations
+# Cloud-Barista development documentation
 Cloud-Barista was created for the purpose of overcoming the limitations of using a single cloud and developing core technologies that provide essential common functions required for operation and management of multi-cloud services that have emerged as a recent trend.
 
 It is a cloud-based technology to configure a multi-cloud computing infrastructure by connecting various heterogeneous cloud infrastructures around the world, and to deploy, manage, and provide various application services anywhere in the world based on the multi-cloud infrastructure.
@@ -16,7 +16,7 @@ Cloud-Barista Community shares output documentations during Cloud-Barista develo
 
 <BR>
 
-## Cloud-Barista Open Conference
+## Cloud-Barista Open Conference materials (PPT files and Movie clips)
 
 - [1st Open Conference (v0.1.0-americano)](https://github.com/cloud-barista/docs/tree/master/openseminar/v0.1.0-americano "docs/openseminar/v0.1.0-americano")
 
@@ -29,7 +29,7 @@ Cloud-Barista Community shares output documentations during Cloud-Barista develo
 
 <BR>
 
-## Other event presentation materials
+## Other event presentation materials (PPT files)
 
 - [Other event presentations](https://github.com/cloud-barista/docs/tree/master/presentations "docs/presentations")
 
@@ -41,13 +41,14 @@ Cloud-Barista Community shares output documentations during Cloud-Barista develo
 - ### Requirements
   - [Requirement Definition](https://github.com/cloud-barista/docs/tree/master/technical_docs/requirements "docs/technical_docs/requirements")
 
-- ### Design
+- ### Design documents
   - [Cloud-Barista System design and gRPC design](https://github.com/cloud-barista/docs/tree/master/technical_docs/design "docs/technical_docs/design")
 
-- ### Features
+- ### Definition of User functions
+
   - [User Services and Features Overview](https://github.com/cloud-barista/docs/blob/master/technical_docs/features/CB-User_Functions.md "docs/technical_docs/features/CB-User_Functions.md")
 
-- ### API
+- ### API documents
   - [Cloud Driver Interface v0.1 (2019-06-23))](https://github.com/cloud-barista/docs/blob/master/technical_docs/API/(Cloud-Barista)CloudDriver-Interface-2019-06-23.pdf "docs/technical_docs/API/(Cloud-Barista)CloudDriver-Interface-2019-06-23.pdf")
 
   - [User functions and Open APIs v0.25 (2019-06-24)](https://github.com/cloud-barista/docs/blob/master/technical_docs/API/(Cloud-Barista)%EC%82%AC%EC%9A%A9%EC%9E%90%20%EA%B8%B0%EB%8A%A5%20%26%20API-2019-06-24.pdf "docs/technical_docs/API/(Cloud-Barista)사용자 기능 & API-2019-06-24.pdf")

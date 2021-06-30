@@ -41,6 +41,6 @@
 
 <BR>
 
-## Cloud-Barista 소스 코드 및 설치 가이드
+## Cloud-Barista v0.4.0-cafemocha 소스 코드 및 설치 가이드
 
 * [v0.4.0-cafemocha 소스 코드 및 설치 가이드](https://github.com/cloud-barista/cloud-barista/tree/v0.4.0-cafemocha "github.com/cloud-barista/cloud-barista/tree/v0.4.0-cafemocha")

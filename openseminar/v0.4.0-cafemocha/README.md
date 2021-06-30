@@ -34,3 +34,13 @@
 | 에필로그 | 강동재<BR>커뮤니티 리더 | - | [[YouTube](https://youtu.be/gIEsqneNqoo)] |
 
 <BR>
+
+## 4차 오픈 컨퍼런스 질의사항 답변서(Q&A Report) 다운로드
+
+* [질의 사항 답변서(Q&A Report) 다운로드(PDF)](https://github.com/cloud-barista/docs/blob/master/openseminar/v0.4.0-cafemocha/Cloud-Barista_4th_Open_Conference_QnA_Report.pdf "github.com/cloud-barista/docs/blob/master/openseminar/v0.4.0-cafemocha/Cloud-Barista_4th_Open_Conference_QnA_Report.pdf")
+
+<BR>
+
+## Cloud-Barista 소스 코드 및 설치 가이드
+
+* [v0.4.0-cafemocha 소스 코드 및 설치 가이드](https://github.com/cloud-barista/cloud-barista/tree/v0.4.0-cafemocha "github.com/cloud-barista/cloud-barista/tree/v0.4.0-cafemocha")

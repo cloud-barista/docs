@@ -155,15 +155,14 @@
 
 멀티 클라우드 서비스 공통 플랫폼(이하 공통 플랫폼, 코드네임: 클라우드 바리스타(Cloud-Barista)은 **그림 1**에서 보는 바와 같이 다양한 멀티 클라우드 인프라 서비스 및 멀티 클라우드 애플리케이션의 운용 및 관리에 필수적으로 요구되는 공통 기반 기술을 포함하고 있으며, 누구나 손쉽게 사용할 수 있도록 개방형 API를 제공한다. 사용자들은 멀티 클라우드 서비스 및 애플리케이션에 공통으로 필요한 기능들을 중복으로 개발해야 하는 비효율성을 제거함으로써 생산성을 크게 향상할 수 있으며 다양한 산업 및 서비스 분야에서 멀티 클라우드 활용이 가능하다.
 
-<P>    
+<P><BR>  
 
 <p align="center">
-  <img src="images/image2.png" width="80%" height="80%">
+  <img src="images/image2.png" width="80%" height="80%"><br><br>
+  <b>그림 1: 멀티 클라우드 서비스 공통 플랫폼 개념도</b>
 </p>
-<center><b>그림 1: 멀티 클라우드 서비스 공통 플랫폼 개념도</b></center>
-<BR>
 
-<P>
+<P><BR>
 
 멀티 클라우드 서비스 공통 플랫폼 기술 개발은 **그림 2(a)** 에서 보는 바와 같이 총 2단계로 구성되며, 단계별 개발 내용은 다음과 같다.
 
@@ -182,15 +181,14 @@
   - 애플리케이션 통합 관리 프레임워크  
   - 멀티 클라우드 특화 서비스
   
-<P>    
+<P><BR>
 
 <p align="center">
-  <img src="images/image3.png" width="75%" height="75%">
+  <img src="images/image3.png" width="75%" height="75%"><br>
+  <b>그림 2: 멀티 클라우드 서비스 공통 플랫폼 단계별 개발 계획 및 구성</b>
 </p>
-<center><b>그림 2: 멀티 클라우드 서비스 공통 플랫폼 단계별 개발 계획 및 구성</b></center>
-<BR>
 
-<P>    
+<P><BR>   
 
 
 멀티 클라우드 서비스 공통 플랫폼의 내부 프레임워크 구성은 **그림 2 (b)** 와 같고, 개별 프레임워크별로 제공하는 주요 기능은 다음과 같다.
@@ -218,13 +216,12 @@
   - 개방형 API를 통해 공통 플랫폼 기능을 활용하는 타 플랫폼 및 SW <BR>
      &#8251; 공통 플랫폼: 동시성 제어가 가능한 단일 사용자 계정 제공
      
-<P> 
+<P><BR>
 
 <p align="center">
-  <img src="images/image4.png" width="75%" height="75%">
+  <img src="images/image4.png" width="75%" height="75%"><br><br>
+  <b>그림 3: 멀티 클라우드 서비스 공통 플랫폼 제공 인터페이스 및 사용자</b>
 </p>
-<center><b>그림 3: 멀티 클라우드 서비스 공통 플랫폼 제공 인터페이스 및 사용자</b></center>
-<BR>
 
 <P><BR>
 
@@ -240,9 +237,9 @@
 <P><BR>
 
 <p align="center">
-  <img src="images/image5.png" width="75%" height="75%">
+  <img src="images/image5.png" width="75%" height="75%"><br><br>
+  <b>그림 4: 멀티 클라우드 서비스 공통 플랫폼 주요 사용자 시나리오</b>
 </p>
-<center><b>그림 4: 멀티 클라우드 서비스 공통 플랫폼 주요 사용자 시나리오</b></center>
 
 <P><BR>
 
@@ -267,9 +264,10 @@
 <P><BR>
 
 <p align="center">
-  <img src="images/image6.png" width="60%" height="60%">
+  <img src="images/image6.png" width="60%" height="60%"><br>
+  <b>그림 5: 멀티 클라우드 연동 정보 등록 시나리오</b>
 </p>
-<center><b>그림 5: 멀티 클라우드 연동 정보 등록 시나리오</b></center>
+
 
 <P><BR>
 
@@ -289,7 +287,7 @@
 >  멀티 클라우드 인프라 서비스를 구성 및 생성 요청하고, 생성이 완료되면
 >  접속할 수 있는 정보를 제공 받는다.
 
-<P>
+<P><BR>
 
 멀티 클라우드 인프라 서비스 생성 시나리오의 세부 내용은 **그림 6** 및 다음과 같다.
 
@@ -330,9 +328,9 @@
 <P><BR>
 
 <p align="center">
-  <img src="images/image7.png" width="60%" height="60%">
+  <img src="images/image7.png" width="60%" height="60%"><br><br>
+  <b>그림 6: 멀티 클라우드 인프라 서비스 생성 시나리오</b>
 </p>
-<center><b>그림 6: 멀티 클라우드 인프라 서비스 생성 시나리오</b></center>
 
 <P><BR>
 

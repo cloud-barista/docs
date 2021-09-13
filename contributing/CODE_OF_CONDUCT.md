@@ -57,8 +57,8 @@ further defined and clarified by project maintainers.
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
 reported by contacting contact-to-cloud-barista@googlegroups.com, which is a shared team inbox.
 If the incident involves someone who receives that shared inbox, you can contact
-an individual maintainer (@powerkimhub or @seokho-son)
-at ```GitHub username``` + ```@github.com```. All
+an individual maintainer (@powerkimhub or @seokho-son). Please send a direct message to 
+`@powerkim` or `@Seokho Son (seokho-son)` in [Cloud-Baristat Slack](cloud-barista.slack.com). All
 complaints will be reviewed and investigated and will result in a response that
 is deemed necessary and appropriate to the circumstances. The project team is
 obligated to maintain confidentiality with regard to the reporter of an incident.

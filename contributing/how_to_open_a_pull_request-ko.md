@@ -6,7 +6,7 @@
 -	cloud-barista community participant roles 
     -	Contributor : Issue 및 PR를 기여하는 사람
     -	Reviewer : Issue 및 PR를 검토하고 의견을 주는 사람
-    -	Approver : Upstream 소스에 PR을 Merge하는 사람
+    -	Approver : Upstream 소스에 PR을 Merge를 승인하는 사람
 -	참고
     -	Issue
         -	문제를 제기
@@ -31,7 +31,7 @@ origin	git@github.com:cb-contributor/cb-tumblebug.git (fetch)
 origin	git@github.com:cb-contributor/cb-tumblebug.git (push)
 ```
 
-- 원격 저장소(프로젝트의 원래 저장소)를 설정한다.
+- 원격 저장소(프로젝트의 원래 저장소)를 추가로 지정한다.
 
 `$ git remote add upstream https://github.com/cloud-barista/cb-tumblebug.git`
 
@@ -43,14 +43,15 @@ upstream	git@github.com:cloud-barista/cb-tumblebug.git (fetch)
 upstream	git@github.com:cloud-barista/cb-tumblebug.git (push)
 ```
 
-- 현재 브랜치를 확인한다.
+- upstream 저장소의 최신 내용을 fetch(정보 업데이트)한다.
 
-`$ git branch`
-```
-* master
-```
+`$ git fetch upstream`
 
-- 작업할 임시 브랜치를 생성하고, 해당 브랜치로 이동한다.
+- 작업의 base가 되는 upstream의 특정 브랜치(예: main)로 checkout(이동, 해당 브랜치의 file들을 local에 적용) 한다.
+
+`$ git checkout upstream/main`
+
+- 작업할 임시 브랜치를 생성(`-b` 옵션)하고, 해당 브랜치로 checkout한다.
 
 `$ git checkout -b feature-add-new-idea`
 ```
@@ -59,7 +60,7 @@ Switched to a new branch 'feature-add-new-idea'
 
 `$ git branch`
 ```
-master
+main
 * feature-add-new-idea
 ```
 
@@ -85,7 +86,7 @@ index 9ebeaf0..cf31b94 100644
 +++ b/src/conf/config.yaml
 ```
 
-- Upstream에 커밋할 파일을 스테이징한다.
+- Upstream에 커밋할 파일을 스테이징한다. (여러개의 수정된 파일들을 스테이징할 수 있다.)
 
 `$ git add src/conf/config.yaml`
 
@@ -99,9 +100,9 @@ Changes to be committed:
 
 - 스테이징된 파일들을 커밋한다. 이때 1줄 커밋 메시지는 이해하기 쉽게 작성한다.
 
-`$ git commit -m "Update frmoni_master config for a common etri environment"`
+`$ git commit -m "Update config for a common environment"`
 ```
-[feature-add-new-idea bcf1ddf] Update frmoni_master config for a common etri environment
+[feature-add-new-idea bcf1ddf] Update config for a common environment
  1 file changed, 69 insertions(+), 69 deletions(-)
  rewrite src/conf/config.yaml (68%)
 ```
@@ -112,17 +113,17 @@ On branch feature-add-new-idea
 nothing to commit, working tree clean
 ```
 
-- Upstream repository의 최신 작업 내용을 fetch 받아온다. [필수이며 생략하며 안됨]
+- Upstream repository의 최신 작업 내용을 fetch 받아온다. (필수이며 생략하면 안됨. 상시로 확인하는 것도 좋은 방법.)
 
 `$ git fetch upstream`
 ```
 From github.com:cloud-barista/cb-tumblebug
- * [new branch]      master     -> upstream/master
+ * [new branch]      main     -> upstream/main
 ```
 
-- Upstream repository의 최신 작업 내용 쪽으로 rebase한다. 이때 repo의 최신 상태와 conflict가 있으면, 컨트리뷰터가 반드시 해결을 하고, 다음 절차를 진행해야 한다.
+- Upstream repository의 최신 작업 내용 쪽으로 rebase(upstream의 최신 내용과 동기화하는 작업)한다. 이때 repo의 최신 상태와 conflict가 있으면, 컨트리뷰터가 반드시 해결을 하고, 다음 절차를 진행해야 한다.
 
-`$ git rebase upstream/master`
+`$ git rebase upstream/main`
 ```
 Current branch feature-add-new-idea is up-to-date.
 ```
@@ -147,5 +148,13 @@ To github.com:cb-contributor/cb-tumblebug.git
 
 - GitHub의 fork 받아 온 repository에 접속하면, “Compare & pull request”가 활성화 된다. 이를 클릭하여, PR 생성 작업에 들어간다. PR 내용은 리뷰어나 승인자가 판단을 쉽게 할 수 있도록, 최대한 수정 내용을 명확하게 작성한다.
 - 생성된 PR을 확인한다. Upstream repository에 PR 아이템이 생성된 것을 볼 수 있다. 리뷰어나 승인자는 PR의 내용 (파일 수정 사항 등)을 확인하여 의견을 남긴다.
-- 리뷰어가 의견을 준 경우에는 의견에 따라 내용을 수정 후 커밋 및 PR을 업데이트 한다. 업데이트된 PR은 다시 리뷰를 받는다. 기존 PR을 업데이트하기 위해서는 작업 공간(임시 작업 브랜치)에서 파일을 수정, git commit –a –m “Rev 1 xxxxxx” (스태이징 및 커밋), git fetch upstream (최신 정보 업데이트), git rebase upstream/master (최신 버전과 차이 비교 및 로컬 머징), git push origin [PR을 올린 임시 작업 브랜치 이름] --force 를 수행한다. 마지막 push에서는 --force 옵션을 줘야 기존의 PR을 업데이트할 수 있다.
-- 리뷰어가 merge 가능 의견을 남기면, 승인자가 해당 PR을 Master branch로 merge한다.
+- 리뷰어가 의견을 준 경우에는 의견에 따라 내용을 수정 후 커밋 및 PR을 업데이트 한다. 업데이트된 PR은 다시 리뷰를 받는다. 
+- 기존 PR을 업데이트하기 위해서는 
+  - 작업 공간(임시 작업 브랜치)에서 파일을 수정
+  - git add xxx_file (수정된 파일 스태이징)
+  - git commit –m “Rev 1 xxxxxx” (스태이징 및 커밋), 
+  - git fetch upstream (최신 정보 업데이트), 
+  - git rebase upstream/main (최신 버전과 차이 비교 및 로컬 머징), 
+  - git push origin [PR을 올린 작업 브랜치 이름] --force 를 수행한다. (rebase를 수행한 경우에만 --force 옵션을 사용)
+  - PR이 자동으로 업데이트 된다.
+- 리뷰어가 merge 가능 의견을 남기면, 승인자가 해당 PR을 main branch로 merge한다.

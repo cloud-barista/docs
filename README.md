@@ -5,7 +5,7 @@ It is a cloud-based technology to configure a multi-cloud computing infrastructu
 
 Cloud-Barista Community shares output documentations during Cloud-Barista development.
 
-<BR>
+<br>
 
 ## Cloud-Barista development contribution guide
 - [We're looking for contributions(English)](https://github.com/cloud-barista/docs/blob/master/CONTRIBUTING.md "docs/CONTRIBUTING.md")
@@ -14,7 +14,7 @@ Cloud-Barista Community shares output documentations during Cloud-Barista develo
 
 - [Contributor Covenant Code of Conduct(English)](https://github.com/cloud-barista/docs/blob/master/contributing/CODE_OF_CONDUCT.md "docs/contributing/CODE_OF_CONDUCT.md")
 
-<BR>
+<br>
 
 ## Cloud-Barista Open Conference materials (PPT files and Movie clips)
 
@@ -27,14 +27,14 @@ Cloud-Barista Community shares output documentations during Cloud-Barista develo
 - [4th Open Conference (v0.4.0-cafemocha)](https://github.com/cloud-barista/docs/tree/master/openseminar/v0.4.0-cafemocha "docs/openseminar/v0.4.0-cafemocha")
 
 
-<BR>
+<br>
 
 ## Other event presentation materials (PPT files)
 
 - [Other event presentations](https://github.com/cloud-barista/docs/tree/master/presentations "docs/presentations")
 
 
-<BR>
+<br>
 
 ## Technical documents 
 

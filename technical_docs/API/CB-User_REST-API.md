@@ -37,8 +37,8 @@
 
 * Maintainer: [@hyokyungk](https://github.com/hyokyungk "https://github.com/hyokyungk")
 
-<P>
-<BR>
+<p>
+<br>
 
 ## v0.3.0-espresso
 
@@ -96,8 +96,8 @@
 * API 규격/샘플 : https://cloud-barista.github.io/rest-api/v0.3.0/dragonfly/
 * Maintainer: [@kyongminkwon](https://github.com/kyongminkwon "https://github.com/kyongminkwon") [@hyokyungk](https://github.com/hyokyungk "https://github.com/hyokyungk")
 
-<P>
-<BR>
+<p>
+<br>
 
 ## v0.2.0-cappuccino
 
@@ -137,8 +137,8 @@
 * API 규격/샘플 : https://cloud-barista.github.io/rest-api/v0.2.0/dragonfly/
 * Maintainer: [@kyongminkwon](https://github.com/kyongminkwon "https://github.com/kyongminkwon") [@hyokyungk](https://github.com/hyokyungk "https://github.com/hyokyungk")
 
-<P>
-<BR>
+<p>
+<br>
 
 ## v0.1.0-americano
 

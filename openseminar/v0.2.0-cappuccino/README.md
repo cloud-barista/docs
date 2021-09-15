@@ -3,6 +3,7 @@
 </p>
 
 ## 2차 오픈 컨퍼런스 개요
+
 * 행사명 : Cloud-Barista 2nd Open Conference<BR>
   * 부제 : “멀티 클라우드에 접속하다(Contact to the Multi-Cloud).”
 

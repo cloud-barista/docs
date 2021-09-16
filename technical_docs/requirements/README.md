@@ -2,7 +2,7 @@
 
 This document defines user and system requirements for “Development of multi-cloud service common platform technology that maximizes the use and spread of various multi-clouds (Code name: Cloud-Barista)”.
 
-<BR>
+<br>
 
 ## Purpose of the document
 This document is a document that derives user requirements and defines system requirements accordingly.
@@ -16,7 +16,7 @@ The user and system requirements was collected and analyzed through the followin
 - Requirements analysis through multi-cloud related PoC(Proof-of-Concept) tests
 - Multi-cloud related latest technology analysis
 
-<BR>
+<br>
 
 ## Cloud-Barista Requirements Definition document link (PDF or Markdown format)
 
@@ -30,4 +30,4 @@ The user and system requirements was collected and analyzed through the followin
 
 - [Cloud-Barista Requirements Definition(v0.8)-2021.03.29 (Markdown, Korean)](./(Cloud-Barista)Requirements(V0.8)-2021.03.29.md "Cloud-Barista Requirements(v0.8) (Markdown)")
 
-<BR>
+<br>

@@ -32,8 +32,8 @@
 
 ### [멀티 클라우드 애플리케이션 운용 관리 (CB-Ladybug)]
 
-* TBA
-* API 규격/샘플 : https://cloud-barista.github.io/rest-api/v0.4.0/ladybug/
+* 멀티 클라우드 애플리케이션 패키지 등록/삭제/정보 조회, 멀티 클라우드 애플리케이션 패키지 설치/제거/상태 조회
+* API 규격/샘플 : TBA
 
 * Maintainer: [@sykim-etri](https://github.com/sykim-etri "https://github.com/sykim-etri")
 

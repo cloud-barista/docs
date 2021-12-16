@@ -22,7 +22,6 @@
 
 | 세션 제목 | 발표자 | 발표 자료 | 발표 영상 |
 | ------------------------------ | :--------------: | :----------------: | :--------------------: |
-
 | 프롤로그 | 강동재<br>커뮤니티 리더 | - | [[YouTube](https://youtu.be/6ylyEoQvNN8?t=87)] |
 | 축사 | 김정삼<br>과학정통부<br>SW정책관<br>/ 김형철 IITP PM | - | [[YouTube](https://youtu.be/6ylyEoQvNN8?t=257)] |
 | 멀티클라우드, "새로운 생태계를 향한 클라우드 비긴어게인" | 강동재<br>커뮤니티 리더 | [[GitHub](https://github.com/cloud-barista/docs/blob/master/openseminar/v0.5.0-affogato/ppt_files/5th_conference_01-Cloud-Begin_Again-v2.0.pdf)] [[SlideShare](https://www.slideshare.net/cloud-barista/cloudbarista-5-cloudbarista)] | [[YouTube](https://youtu.be/6ylyEoQvNN8?t=760)] |

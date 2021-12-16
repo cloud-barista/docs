@@ -25,6 +25,7 @@ Cloud-Barista Community shares output documentations during Cloud-Barista develo
 - [3rd Open Conference (v0.3.0-espresso)](https://github.com/cloud-barista/docs/tree/master/openseminar/v0.3.0-espresso "docs/openseminar/v0.3.0-espresso")
 
 - [4th Open Conference (v0.4.0-cafemocha)](https://github.com/cloud-barista/docs/tree/master/openseminar/v0.4.0-cafemocha "docs/openseminar/v0.4.0-cafemocha")
+- [5th Open Conference (v0.5.0-affogato)](https://github.com/cloud-barista/docs/tree/master/openseminar/v0.5.0-affogato "docs/openseminar/v0.5.0-affogato")
 
 
 <br>

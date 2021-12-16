@@ -48,10 +48,8 @@ Cloud-Barista Community shares output documentations during Cloud-Barista develo
 
   - [User Services and Features Overview](https://github.com/cloud-barista/docs/blob/master/technical_docs/features/CB-User_Functions.md "docs/technical_docs/features/CB-User_Functions.md")
 
-- ### API documents
-  - [Cloud Driver Interface v0.1 (2019-06-23))](https://github.com/cloud-barista/docs/blob/master/technical_docs/API/(Cloud-Barista)CloudDriver-Interface-2019-06-23.pdf "docs/technical_docs/API/(Cloud-Barista)CloudDriver-Interface-2019-06-23.pdf")
-
-  - [User functions and Open APIs v0.25 (2019-06-24)](https://github.com/cloud-barista/docs/blob/master/technical_docs/API/(Cloud-Barista)%EC%82%AC%EC%9A%A9%EC%9E%90%20%EA%B8%B0%EB%8A%A5%20%26%20API-2019-06-24.pdf "docs/technical_docs/API/(Cloud-Barista)사용자 기능 & API-2019-06-24.pdf")
+- ### API documents  
+  - [Cloud-Barista User functions](https://github.com/cloud-barista/docs/blob/master/technical_docs/features/CB-User_Functions.md "technical_docs/features/CB-User_Functions.md")
 
   - [Cloud-Barista User REST APIs](https://github.com/cloud-barista/docs/blob/master/technical_docs/API/CB-User_REST-API.md "docs/technical_docs/API/CB-User_REST-API.md")
 

@@ -3,12 +3,12 @@
 </p>
 <br>
 
-## 제 5차 오픈 컨퍼런스 개요
+## 클라우드바리스타 커뮤니티 제5차 컨퍼런스 개요
 
-* 행사명 : Cloud-Barista 커뮤니티 제5차 컨퍼런스<br>
+* 행사명 : 클라우드바리스타 커뮤니티 제5차 컨퍼런스<br>
   * 부제 : 멀티클라우드, "새로운 생태계를 향한 클라우드 비긴어게인"
 
-* 주  관 : Cloud-Barista 커뮤니티
+* 주  관 : 클라우드바리스타 커뮤니티
  
 * 후  원 : 과학기술정보통신부, 정보통신기획평가원(IITP), 정보통신산업진흥원(NIPA), ETRI 오픈소스센터(EOSC)
 
@@ -18,7 +18,7 @@
 
 <br>
 
-## 5차 오픈 컨퍼런스 프로그램, 발표 자료 및 발표 영상
+## 클라우드바리스타 커뮤니티 제5차 컨퍼런스 프로그램 및 발표 자료
 
 | 세션 제목 | 발표자 | 발표 자료 | 발표 영상 |
 | ------------------------------ | :--------------: | :----------------: | :--------------------: |
@@ -38,7 +38,7 @@
 
 <br>
 
-## 5차 오픈 컨퍼런스 질의사항 답변서(Q&A Report) 다운로드
+## 클라우드바리스타 커뮤니티 제5차 컨퍼런스 질의사항 답변서(Q&A report) 다운로드
 
 * [행사 질의 사항 답변서(Q&A Report) 다운로드(PDF)](https://github.com/cloud-barista/docs/blob/master/openseminar/v0.5.0-affogato/Cloud-Barista_5th_Open_Conference_QnA_Report.pdf "github.com/cloud-barista/docs/blob/master/openseminar/v0.5.0-affogato/Cloud-Barista_5th_Open_Conference_QnA_Report.pdf")
 

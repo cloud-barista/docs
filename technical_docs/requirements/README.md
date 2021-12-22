@@ -26,8 +26,8 @@ The user and system requirements was collected and analyzed through the followin
 
 - [Cloud-Barista Requirements Definition(v0.7)-2020.08.24 (PDF, Korean)](./(Cloud-Barista)Requirements(V0.7)-2020.08.24.pdf "Cloud-Barista Requirements(v0.7) (PDF)")
 
-- [Cloud-Barista Requirements Definition(v0.8)-2021.03.29 (PDF, Korean)](./(Cloud-Barista)Requirements(V0.8)-2021.03.29.pdf "Cloud-Barista Requirements(v0.8) (PDF)")
+- [Cloud-Barista Requirements Definition(v0.8)-2021.03.22 (PDF, Korean)](./(Cloud-Barista)Requirements(V0.8)-2021.03.22.pdf "Cloud-Barista Requirements(v0.8) (PDF)")
 
-- [Cloud-Barista Requirements Definition(v0.8)-2021.03.29 (Markdown, Korean)](./(Cloud-Barista)Requirements(V0.8)-2021.03.29.md "Cloud-Barista Requirements(v0.8) (Markdown)")
+- [Cloud-Barista Requirements Definition(v0.8)-2021.03.22 (Markdown, Korean)](./(Cloud-Barista)Requirements(V0.8)-2021.03.22.md "Cloud-Barista Requirements(v0.8) (Markdown)")
 
 <br>

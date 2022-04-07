@@ -122,12 +122,14 @@ $ sudo cp -r protoc3/bin/* /usr/local/bin/
 $ sudo cp -r protoc3/include/* /usr/local/include/
 $ sudo chown $USER /usr/local/bin/protoc
 $ sudo chown -R $USER /usr/local/include/google
+$ go env -w GO111MODULE="off"
 $ go get -u github.com/golang/protobuf/protoc-gen-go
 // gogoprotobuf 툴 설치
 $ go get github.com/gogo/protobuf/protoc-gen-gofast
-$ go env -w GO111MODULE="off"
 $ go get -u github.com/gogo/protobuf
 $ go env -w GO111MODULE="on"
+// protoc-gen-go, protoc-gen-gofast path 설정
+$ export PATH=$PATH:$HOME/go/bin
 ```
 
 ## [코어 로직 구현 / &#9314; 단계]

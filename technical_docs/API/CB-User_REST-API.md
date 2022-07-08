@@ -43,7 +43,7 @@
 * MCIS 및 VM 모니터링(온디멘드 모니터링 조회, MCIS 모니터링 조회, 알람 이벤트 핸들러 관리 및 알람 관리)
 * API 규격/샘플 : https://cloud-barista.github.io/rest-api/v0.6.0/dragonfly/
 
-* Maintainer: [@hyokyungk](https://github.com/hyokyungk "https://github.com/hyokyungk") [@devpjh121](https://github.com/devpjh121 "https://github.com/devpjh121")
+* Maintainer: [@hyokyungk](https://github.com/hyokyungk "https://github.com/hyokyungk") [@pjini](https://github.com/pjini "https://github.com/pjini")
 
 <p>
 <br>

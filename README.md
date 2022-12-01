@@ -16,7 +16,7 @@ Cloud-Barista Community shares output documentations during Cloud-Barista develo
 
 <br>
 
-## Cloud-Barista Open Conference materials (PPT files and Movie clips)
+## Cloud-Barista Community Open Conference materials (Presentation files and Movie clips)
 
 - [1st Open Conference (v0.1.0-americano)](https://github.com/cloud-barista/docs/tree/master/openseminar/v0.1.0-americano "docs/openseminar/v0.1.0-americano")
 
@@ -29,6 +29,8 @@ Cloud-Barista Community shares output documentations during Cloud-Barista develo
 - [5th Open Conference (v0.5.0-affogato)](https://github.com/cloud-barista/docs/tree/master/openseminar/v0.5.0-affogato "docs/openseminar/v0.5.0-affogato")
 
 - [6th Open Conference (v0.6.0-cafelatte)](https://github.com/cloud-barista/docs/tree/master/openseminar/v0.6.0-cafelatte "docs/openseminar/v0.6.0-cafelatte")
+
+- [7th Open Conference (v0.7.0-cortado)](https://github.com/cloud-barista/docs/tree/master/openseminar/v0.7.0-cortado "docs/openseminar/v0.7.0-cortado")
 
 <br>
 

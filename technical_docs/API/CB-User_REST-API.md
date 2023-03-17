@@ -20,19 +20,11 @@
 
 ---
 
-### [멀티 클라우드 쿠버네티스 서비스 운용 관리 (CB-MCKS)]
-
-* 클러스터 생성/삭제/정보 조회, 노드 추가, 삭제, 정보 조회
-* API 규격/샘플 : https://cloud-barista.github.io/cb-mcks-api-web/?url=https://raw.githubusercontent.com/cloud-barista/cb-mcks/v0.7.0/src/docs/swagger.yaml
-
-* Maintainer: [@itnpeople](https://github.com/itnpeople "https://github.com/itnpeople") [@joowons](https://github.com/joowons "https://github.com/joowons")
-
----
-
 ### [멀티 클라우드 애플리케이션 운용 관리 (CB-Ladybug)]
 
-* 멀티 클라우드 애플리케이션 패키지 등록/삭제/정보 조회, 멀티 클라우드 애플리케이션 패키지 설치/제거/상태 조회
-* API 규격/샘플 : TBA
+* 멀티 클라우드 및 싱글 클라우드 대상 클러스터 생성/삭제/정보 조회, 노드 추가, 삭제, 정보 조회
+  * 멀티 클라우드 쿠버네티스 서비스 운용 관리 (CB-MCKS) 기능 통합
+* API 규격/샘플 : https://cloud-barista.github.io/rest-api/v0.7.0/ladybug/
 
 * Maintainer: [@sykim-etri](https://github.com/sykim-etri "https://github.com/sykim-etri")
 
@@ -71,7 +63,7 @@
 ### [멀티 클라우드 쿠버네티스 서비스 운용 관리 (CB-MCKS)]
 
 * 클러스터 생성/삭제/정보 조회, 노드 추가, 삭제, 정보 조회
-* API 규격/샘플 : https://cloud-barista.github.io/rest-api/v0.6.0/mcks/
+* API 규격/샘플 : https://cloud-barista.github.io/rest-api/v0.6.0/ladybug/
 
 * Maintainer: [@itnpeople](https://github.com/itnpeople "https://github.com/itnpeople") [@joowons](https://github.com/joowons "https://github.com/joowons")
 
@@ -119,7 +111,7 @@
 ### [멀티 클라우드 쿠버네티스 서비스 운용 관리 (CB-MCKS)]
 
 * 클러스터 생성/삭제/정보 조회, 노드 추가, 삭제, 정보 조회
-* API 규격/샘플 : https://cloud-barista.github.io/rest-api/v0.5.0/mcks/
+* API 규격/샘플 : https://cloud-barista.github.io/rest-api/v0.5.0/ladybug/
 
 * Maintainer: [@itnpeople](https://github.com/itnpeople "https://github.com/itnpeople") [@vlatte](https://github.com/vlatte "https://github.com/vlatte")
 
@@ -168,7 +160,7 @@
 ### [멀티 클라우드 쿠버네티스 서비스 운용 관리 (CB-MCKS)]
 
 * 클러스터 생성/삭제/정보 조회, 노드 추가, 삭제, 정보 조회
-* API 규격/샘플 : https://cloud-barista.github.io/rest-api/v0.4.0/mcks/
+* API 규격/샘플 : https://cloud-barista.github.io/rest-api/v0.4.0/ladybug/
 
 * Maintainer: [@itnpeople](https://github.com/itnpeople "https://github.com/itnpeople") [@vlatte](https://github.com/vlatte "https://github.com/vlatte")
 
@@ -238,7 +230,7 @@
 ### [멀티 클라우드 쿠버네티스 서비스 운용 관리 (CB-MCKS)]
 
 * 클러스터 생성/삭제/정보 조회, 노드 추가, 삭제, 정보 조회
-* API 규격/샘플 : https://cloud-barista.github.io/rest-api/v0.3.0/mcks/
+* API 규격/샘플 : https://cloud-barista.github.io/rest-api/v0.3.0/ladybug/
 * Maintainer: [@itnpeople](https://github.com/itnpeople "https://github.com/itnpeople") [@vlatte](https://github.com/vlatte "https://github.com/vlatte")
 
 ---

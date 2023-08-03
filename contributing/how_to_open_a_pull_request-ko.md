@@ -1,29 +1,29 @@
-# GitHub를 통한 Cloud-Barista 컨트리뷰션 절차 가이드
+# GitHub를 통한 컨트리뷰션 절차 가이드
 
 ## 개요
--	GitHub 컨트리뷰션 사이클 가이드를 통한 임의의 repository에 컨트리뷰션 방법 공유
+-	GitHub 컨트리뷰션 절차에 따라 원하는 저장소(Repository)에 컨트리뷰션 방법 공유
     -	Git remote repository 등록 및 Pull-request (PR) 처리 방법
--	cloud-barista community participant roles 
-    -	Contributor : Issue 및 PR를 기여하는 사람
-    -	Reviewer : Issue 및 PR를 검토하고 의견을 주는 사람
-    -	Approver : Upstream 소스에 PR을 Merge를 승인하는 사람
+-	Community participant roles
+    -	Contributor: Issue 및 PR를 기여하는 사람
+    -	Reviewer: Issue 및 PR를 검토하고 의견을 주는 사람
+    -	Approver: Upstream 소스에 PR을 Merge를 승인하는 사람
 -	참고
     -	Issue
         -	문제를 제기
-        -	담당자 assign을 통해서 컨트리뷰터 간의 중복 작업을 줄일 수 있음
+        -	담당자 Assign을 통해서 컨트리뷰터 간의 중복 작업을 줄일 수 있음
     -	Pull request
         -	PR, 본인이 작업한 브랜치의 내용을 upstream에 반영해 달라고 요청하는 작업
 
 ## 컨트리뷰션 절차
-- 개인 GitHub 계정(예시: cb-contributor)으로, 컨트리뷰션 원하는 프로젝트(예시:cloud-barista/cb-tumblebug)를 fork한다.
-- 자신의 GitHub 계정에 있는 fork된 Repository를 개발 환경에 clone한다.
+- 개인 GitHub 계정(예시: cb-contributor)으로, 컨트리뷰션 원하는 프로젝트(예시:cloud-barista/cb-tumblebug)를 Fork한다.
+- 자신의 GitHub 계정에 있는 Fork된 Repository를 개발 환경에 Clone한다(Fork된 Repository는 **Origin으로 통용**).
 - 본 예시에서는 cb-tumblebug라는 Repository를 대상으로 한다.
 
-- 자신의 GitHub 계정에 있는 fork된 Repository를 개발 환경에 clone한다.
+- 자신의 GitHub 계정에 있는 Fork된 Repository를 개발 환경에 Clone한다.
 
 `$ git clone https://github.com/cb-contributor/cb-tumblebug.git`
 
-- clone된 디렉토리에 들어가서, git의 repository 상태를 확인한다.
+- Clone된 디렉토리에 들어가서, Git의 Repository 상태를 확인한다.
 
 `$ git remote -v`
 ```
@@ -31,7 +31,7 @@ origin	git@github.com:cb-contributor/cb-tumblebug.git (fetch)
 origin	git@github.com:cb-contributor/cb-tumblebug.git (push)
 ```
 
-- 원격 저장소(프로젝트의 원래 저장소)를 추가로 지정한다.
+- Remote repository를 추가로 지정한다(프로젝트의 본래 Repository이고 **Upstream으로 통용**).
 
 `$ git remote add upstream https://github.com/cloud-barista/cb-tumblebug.git`
 
@@ -43,15 +43,15 @@ upstream	git@github.com:cloud-barista/cb-tumblebug.git (fetch)
 upstream	git@github.com:cloud-barista/cb-tumblebug.git (push)
 ```
 
-- upstream 저장소의 최신 내용을 fetch(정보 업데이트)한다.
+- Upstream 저장소의 최신 내용을 fetch(정보 업데이트)한다.
 
 `$ git fetch upstream`
 
-- 작업의 base가 되는 upstream의 특정 브랜치(예: main)로 checkout(이동, 해당 브랜치의 file들을 local에 적용) 한다.
+- 작업의 Base가 되는 Upstream의 특정 브랜치(예: main)로 checkout(이동, 해당 브랜치의 File들을 Local에 적용) 한다.
 
 `$ git checkout upstream/main`
 
-- 작업할 임시 브랜치를 생성(`-b` 옵션)하고, 해당 브랜치로 checkout한다.
+- 작업할 임시 브랜치를 생성(`-b` 옵션)하고, 해당 브랜치로 Checkout한다.
 
 `$ git checkout -b feature-add-new-idea`
 ```
@@ -113,7 +113,7 @@ On branch feature-add-new-idea
 nothing to commit, working tree clean
 ```
 
-- Upstream repository의 최신 작업 내용을 fetch 받아온다. (필수이며 생략하면 안됨. 상시로 확인하는 것도 좋은 방법.)
+- Upstream repository의 최신 작업 내용을 Fetch 받아온다. (필수이며 생략하면 안됨. 상시로 확인하는 것도 좋은 방법.)
 
 `$ git fetch upstream`
 ```
@@ -121,14 +121,14 @@ From github.com:cloud-barista/cb-tumblebug
  * [new branch]      main     -> upstream/main
 ```
 
-- Upstream repository의 최신 작업 내용 쪽으로 rebase(upstream의 최신 내용과 동기화하는 작업)한다. 이때 repo의 최신 상태와 conflict가 있으면, 컨트리뷰터가 반드시 해결을 하고, 다음 절차를 진행해야 한다.
+- Upstream repository의 최신 작업 내용 쪽으로 Rebase(Upstream의 최신 내용과 동기화하는 작업)한다. 이때 Repository의 최신 상태와 Conflict가 있으면, 컨트리뷰터가 반드시 해결을 하고, 다음 절차를 진행해야 한다.
 
 `$ git rebase upstream/main`
 ```
 Current branch feature-add-new-idea is up-to-date.
 ```
 
-- Origin(본인의 github repository)에 작업 브랜치를 push(업로드) 한다.
+- Origin(본인의 GitHub repository)에 작업 브랜치를 Push(업로드) 한다.
 
 `$ git push origin feature-add-new-idea`
 ```
@@ -146,7 +146,7 @@ To github.com:cb-contributor/cb-tumblebug.git
  * [new branch]      feature-add-new-idea -> feature-add-new-idea
 ```
 
-- GitHub의 fork 받아 온 repository에 접속하면, “Compare & pull request”가 활성화 된다. 이를 클릭하여, PR 생성 작업에 들어간다. PR 내용은 리뷰어나 승인자가 판단을 쉽게 할 수 있도록, 최대한 수정 내용을 명확하게 작성한다.
+- GitHub의 Fork 받아 온 Repository에 접속하면, “Compare & pull request”가 활성화 된다. 이를 클릭하여, PR 생성 작업에 들어간다. PR 내용은 리뷰어나 승인자가 판단을 쉽게 할 수 있도록, 최대한 수정 내용을 명확하게 작성한다.
 - 생성된 PR을 확인한다. Upstream repository에 PR 아이템이 생성된 것을 볼 수 있다. 리뷰어나 승인자는 PR의 내용 (파일 수정 사항 등)을 확인하여 의견을 남긴다.
 - 리뷰어가 의견을 준 경우에는 의견에 따라 내용을 수정 후 커밋 및 PR을 업데이트 한다. 업데이트된 PR은 다시 리뷰를 받는다. 
 - 기존 PR을 업데이트하기 위해서는 
@@ -157,4 +157,4 @@ To github.com:cb-contributor/cb-tumblebug.git
   - git rebase upstream/main (최신 버전과 차이 비교 및 로컬 머징), 
   - git push origin [PR을 올린 작업 브랜치 이름] --force 를 수행한다. (rebase를 수행한 경우에만 --force 옵션을 사용)
   - PR이 자동으로 업데이트 된다.
-- 리뷰어가 merge 가능 의견을 남기면, 승인자가 해당 PR을 main branch로 merge한다.
+- 리뷰어가 Merge 가능 의견을 남기면, 승인자가 해당 PR을 main branch로 Merge한다.

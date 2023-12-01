@@ -2,7 +2,7 @@
 
 **Cloud-Barista Community actively contributes to multi-cloud technology advancement**, and we share documentation outputs throughout the development process, fostering a collaborative ecosystem for continuous innovation in multi-cloud technology.
 
-Since 2019, Cloud-Barista Community has been researching and developing multi-cloud common platform technology, and has consistently shared related technical documents. From 2023, we plan to expand to cloud migration technology based on multi-cloud common platform technology.
+Since 2019, Cloud-Barista Community has been researching and developing multi-cloud common platform technology. From 2023, we plan to expand to cloud migration technology based on multi-cloud common platform technology.
 
 **Cloud-Barista's core frameworks have been providing essential common functions required for the operation and management of multi-cloud services.** Leveraging the combined strengths of the integrated multi-cloud infrastructure, it makes you facilitate the deployment, management, and delivery of various application services on a global scale. We promise that we will continue to improve our core frameworks.
 
@@ -11,6 +11,7 @@ Since 2019, Cloud-Barista Community has been researching and developing multi-cl
 Related materials are as follows. 
 
 ## Cloud-Barista contribution guide
+
 - [We're looking for contributions](https://github.com/cloud-barista/docs/blob/master/CONTRIBUTING.md "docs/CONTRIBUTING.md")
 
 - [Contribution Guide (Korean)](https://github.com/cloud-barista/docs/blob/master/contributing/how_to_open_a_pull_request-ko.md "docs/contributing/how_to_open_a_pull_request-ko.md")
@@ -42,13 +43,3 @@ You can find presentation files and video clips.
 You can find presentation files.
 
 - [Other event presentations](https://github.com/cloud-barista/docs/tree/master/presentations "docs/presentations")
-
-
-<br>
-
-## Technical documents 
-
-You can find documents of requirements, design, user functions, and APIs.
-
-- [Technical documents](https://github.com/cloud-barista/docs/tree/master/technical_docs "docs/technical_docs")
-

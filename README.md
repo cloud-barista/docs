@@ -36,6 +36,8 @@ You can find presentation files and video clips.
 
 - [7th Open Conference (v0.7.0-cortado)](https://github.com/cloud-barista/docs/tree/master/openseminar/v0.7.0-cortado "docs/openseminar/v0.7.0-cortado")
 
+- [8th Open Conference (v0.8.0-chamomile)](https://github.com/cloud-barista/docs/tree/master/openseminar/v0.8.0-chamomile "docs/openseminar/v0.8.0-chamomile")
+
 <br>
 
 ## Other event presentation materials (PPT files)

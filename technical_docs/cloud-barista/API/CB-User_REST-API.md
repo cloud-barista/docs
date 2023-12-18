@@ -12,7 +12,7 @@
 ### [멀티 클라우드 인프라 서비스 통합 관리 (CB-Tumblebug)]
 
 * 네임스페이스 생성 및 관리, MCIR 등록/생성 및 관리, MCIS 생성/제어 및 관리
-* API 규격/샘플 : https://cloud-barista.github.io/cb-tumblebug-api-web/?url=https://raw.githubusercontent.com/cloud-barista/cb-tumblebug/v0.7.0/src/api/rest/docs/swagger.yaml
+* API 규격/샘플 : https://cloud-barista.github.io/cb-tumblebug-api-web/?url=https://raw.githubusercontent.com/cloud-barista/cb-tumblebug/v0.8.0/src/api/rest/docs/swagger.yaml
 
 ---
 

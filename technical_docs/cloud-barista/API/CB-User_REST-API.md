@@ -1,5 +1,31 @@
 # [ Cloud-Barista User REST API ]
 
+## v0.8.0 (Chamomile)
+
+### [클라우드 인프라 연동 정보 통합 관리 (CB-Spider)]
+
+* 클라우드 인프라 연결을 위한 정보 등록 및 관리
+* API 규격/샘플 : https://github.com/cloud-barista/cb-spider/wiki/CB-Spider-User-Interface
+* 
+---
+
+### [멀티 클라우드 인프라 서비스 통합 관리 (CB-Tumblebug)]
+
+* 네임스페이스 생성 및 관리, MCIR 등록/생성 및 관리, MCIS 생성/제어 및 관리
+* API 규격/샘플 : https://cloud-barista.github.io/cb-tumblebug-api-web/?url=https://raw.githubusercontent.com/cloud-barista/cb-tumblebug/v0.7.0/src/api/rest/docs/swagger.yaml
+
+---
+
+### [멀티 클라우드 인프라 서비스 통합 모니터링 (CB-Dragonfly)]
+
+* MCIS 및 VM 모니터링(온디멘드 모니터링 조회, MCIS 모니터링 조회, 알람 이벤트 핸들러 관리 및 알람 관리)
+* API 규격/샘플 : https://documenter.getpostman.com/view/16665192/2s9YkjBPi8
+
+<p>
+<br>
+
+
+
 ## v0.7.0 (Cortado)
 
 ### [클라우드 인프라 연동 정보 통합 관리 (CB-Spider)]

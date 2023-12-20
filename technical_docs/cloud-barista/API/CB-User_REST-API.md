@@ -5,7 +5,7 @@
 ### [클라우드 인프라 연동 정보 통합 관리 (CB-Spider)]
 
 * 클라우드 인프라 연결을 위한 정보 등록 및 관리
-* API 규격/샘플 : https://github.com/cloud-barista/cb-spider/wiki/CB-Spider-User-Interface
+* API 규격/샘플 : https://github.com/cloud-barista/cb-spider/wiki/CB-Spider-User-Interface#cb-spider-rest-api-documents-and-guide
  
 ---
 
@@ -24,14 +24,12 @@
 <p>
 <br>
 
-
-
 ## v0.7.0 (Cortado)
 
 ### [클라우드 인프라 연동 정보 통합 관리 (CB-Spider)]
 
 * 클라우드 인프라 연결을 위한 정보 등록 및 관리
-* API 규격/샘플 : https://github.com/cloud-barista/cb-spider/wiki/CB-Spider-User-Interface
+* API 규격/샘플 : https://github.com/cloud-barista/cb-spider/wiki/CB-Spider-User-Interface#cb-spider-rest-api-documents-and-guide
 
 * Maintainer: [@powerkimhub](https://github.com/powerkimhub "https://github.com/powerkimhub")
 
@@ -71,7 +69,7 @@
 ### [클라우드 인프라 연동 정보 통합 관리 (CB-Spider)]
 
 * 클라우드 인프라 연결을 위한 정보 등록 및 관리
-* API 규격/샘플 : https://github.com/cloud-barista/cb-spider/wiki/CB-Spider-User-Interface
+* API 규격/샘플 : https://github.com/cloud-barista/cb-spider/wiki/CB-Spider-User-Interface#cb-spider-rest-api-documents-and-guide
 
 * Maintainer: [@powerkimhub](https://github.com/powerkimhub "https://github.com/powerkimhub")
 
@@ -119,7 +117,7 @@
 ### [클라우드 인프라 연동 정보 통합 관리 (CB-Spider)]
 
 * 클라우드 인프라 연결을 위한 정보 등록 및 관리
-* API 규격/샘플 : https://github.com/cloud-barista/cb-spider/wiki/CB-Spider-User-Interface
+* API 규격/샘플 : https://github.com/cloud-barista/cb-spider/wiki/CB-Spider-User-Interface#cb-spider-rest-api-documents-and-guide
 
 * Maintainer: [@powerkimhub](https://github.com/powerkimhub "https://github.com/powerkimhub")
 

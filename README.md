@@ -38,6 +38,8 @@ You can find presentation files and video clips.
 
 - [8th Open Conference (v0.8.0-chamomile)](https://github.com/cloud-barista/docs/tree/master/openseminar/v0.8.0-chamomile "docs/openseminar/v0.8.0-chamomile")
 
+- [9th Open Conference (v0.9.0-cinnamon)](https://github.com/cloud-barista/docs/tree/master/openseminar/v0.9.0-cinnamon "docs/openseminar/v0.9.0-cinnamon")
+
 <br>
 
 ## Other event presentation materials (PPT files)

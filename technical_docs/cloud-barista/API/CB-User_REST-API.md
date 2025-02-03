@@ -1,8 +1,23 @@
 # [ Cloud-Barista User REST API ]
 
-## v0.9.0
+* Developing version API : https://cloud-barista.github.io/api/
 
-https://cloud-barista.github.io/api/
+## v0.10.0
+
+### [CB-Tumblebug]
+
+* API: https://cloud-barista.github.io/api/?url=https://raw.githubusercontent.com/cloud-barista/cb-tumblebug/v0.10.0/src/api/rest/docs/swagger.yaml
+
+### [CB-Spider]
+
+* API : https://github.com/cloud-barista/cb-spider/wiki/CB-Spider-User-Interface#cb-spider-rest-api-documents-and-guide
+
+---
+
+<p>
+<br>
+
+## v0.9.0
 
 ### [CB-Tumblebug]
 

@@ -40,6 +40,8 @@ You can find presentation files and video clips.
 
 - [9th Open Conference (v0.9.0-cinnamon)](https://github.com/cloud-barista/docs/tree/master/openseminar/v0.9.0-cinnamon "docs/openseminar/v0.9.0-cinnamon")
 
+- [10th Open Conference (v0.10.0-darjeeling)](https://github.com/cloud-barista/docs/tree/master/openseminar/v0.10.0-darjeeling "docs/openseminar/v0.10.0-darjeeling")
+
 <br>
 
 ## Other event presentation materials (PPT files)

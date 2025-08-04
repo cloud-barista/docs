@@ -42,6 +42,9 @@ You can find presentation files and video clips.
 
 - [10th Open Conference (v0.10.0-darjeeling)](https://github.com/cloud-barista/docs/tree/master/openseminar/v0.10.0-darjeeling "docs/openseminar/v0.10.0-darjeeling")
 
+- [11th Open Conference (v0.11.0-earlgrey)](https://github.com/cloud-barista/docs/tree/master/openseminar/v0.11.0-earlgrey "docs/openseminar/v0.11.0-earlgrey")
+
+
 <br>
 
 ## Other event presentation materials (PPT files)
